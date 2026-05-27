@@ -78,7 +78,9 @@ The demo illustrates how PrZMA generates realistic, role-driven interactions and
   - Action-based triggers  
   - Platform-aware path resolution (VM-side)  
   An example snapshot output is shown below:
-  ![snapshot](images/snapshot_figure.png)
+  <p align="center">
+    <img src="images/snapshot_figure.png" alt="Snapshot example" width="550">
+  </p>
 
 - **Dual-Purpose Design**
   - **Education**: realistic analyst-style interactions and artifact generation  
