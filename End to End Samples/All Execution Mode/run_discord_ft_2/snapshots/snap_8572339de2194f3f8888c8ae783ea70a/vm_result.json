@@ -1,0 +1,1424 @@
+{
+  "ok": true,
+  "run_id": "discord_ft_2",
+  "snapshot_id": "snap_8572339de2194f3f8888c8ae783ea70a",
+  "agent_id": "A1",
+  "manifest": {
+    "schema_version": "1.0.0",
+    "run_id": "discord_ft_2",
+    "snapshot_id": "snap_8572339de2194f3f8888c8ae783ea70a",
+    "agent_id": "A1",
+    "created_at": "2026-02-14T11:28:33.547072+00:00",
+    "trigger": {
+      "schema_version": "1.0.0",
+      "type": "event",
+      "reason": "event:browser.close",
+      "action_id": null,
+      "action_name": "browser.close",
+      "agent_id": "A1",
+      "scheduled_at": null,
+      "meta": {
+        "rules_path": "interpreter_out\\discord_full_trigger\\rules.json",
+        "catalog_path": "Snapshot_Engine\\artifact_catalog.json"
+      }
+    },
+    "layers": [],
+    "files": [],
+    "artifacts": [
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\History",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.profile.core\\History",
+        "size": 196608,
+        "sha256": "1daa96916659ee1fe5a0210aa976eab5f8736d5abbe55dad5cd6a84efb810abd",
+        "meta": {
+          "artifact_key": "chromium.profile.core"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\History-journal",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.profile.core\\History-journal",
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "meta": {
+          "artifact_key": "chromium.profile.core"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Login Data",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.profile.core\\Login Data",
+        "size": 40960,
+        "sha256": "d286c7aa59052c28a12e65c92aaf67b371b4006c9606c1bb9e1e2ec12db31813",
+        "meta": {
+          "artifact_key": "chromium.profile.core"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Login Data-journal",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.profile.core\\Login Data-journal",
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "meta": {
+          "artifact_key": "chromium.profile.core"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Preferences",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.profile.core\\Preferences",
+        "size": 10781,
+        "sha256": "79f57f271497578f55e2ad49a1c7b575d3b9d63e715d049cd20451e8651421e2",
+        "meta": {
+          "artifact_key": "chromium.profile.core"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Secure Preferences",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.profile.core\\Secure Preferences",
+        "size": 9361,
+        "sha256": "bf47356674db4a33616a3d62b7478596d7905e49adda200bee793a255811f276",
+        "meta": {
+          "artifact_key": "chromium.profile.core"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Top Sites",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.profile.core\\Top Sites",
+        "size": 20480,
+        "sha256": "a6b39f927ff3c2f9c4ab366dba76d42c4e30d7070da60f423b2f1e107c7215b1",
+        "meta": {
+          "artifact_key": "chromium.profile.core"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Web Data",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.profile.core\\Web Data",
+        "size": 153600,
+        "sha256": "d8575bb5d0bba8a34f0065bacef5b4d2f3b946e006fb8a4b9534bdbfd371dca1",
+        "meta": {
+          "artifact_key": "chromium.profile.core"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Web Data-journal",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.profile.core\\Web Data-journal",
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "meta": {
+          "artifact_key": "chromium.profile.core"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Local Storage\\leveldb\\000005.ldb",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.storage.localstorage\\leveldb\\000005.ldb",
+        "size": 22789,
+        "sha256": "4315af513d01757edb82498df94d995a9686b8d7f8f1dcc85fc3f1b240043a7a",
+        "meta": {
+          "artifact_key": "chromium.storage.localstorage"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Local Storage\\leveldb\\000008.ldb",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.storage.localstorage\\leveldb\\000008.ldb",
+        "size": 16100,
+        "sha256": "e7d7bdf19f41397ce18e6f17423032fd66d62715118ecff054ce45c09e2c22f2",
+        "meta": {
+          "artifact_key": "chromium.storage.localstorage"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Local Storage\\leveldb\\000011.ldb",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.storage.localstorage\\leveldb\\000011.ldb",
+        "size": 14638,
+        "sha256": "62a3017da900d115740a934279fecc50f473f1f3e6d380b1bcb7569e2979d7b4",
+        "meta": {
+          "artifact_key": "chromium.storage.localstorage"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Local Storage\\leveldb\\000013.ldb",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.storage.localstorage\\leveldb\\000013.ldb",
+        "size": 13889,
+        "sha256": "e5635852f6631abc4f5cbbeb305beef2ec46e02f1ec65293c86b04c3e8b5737d",
+        "meta": {
+          "artifact_key": "chromium.storage.localstorage"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Local Storage\\leveldb\\000016.log",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.storage.localstorage\\leveldb\\000016.log",
+        "size": 1126,
+        "sha256": "f048b178c27ab6b49dca6855934551d1c5970a4cc41b3b5a8265a28a39f6996d",
+        "meta": {
+          "artifact_key": "chromium.storage.localstorage"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Local Storage\\leveldb\\000017.ldb",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.storage.localstorage\\leveldb\\000017.ldb",
+        "size": 15440,
+        "sha256": "8201dff905377e1f9479a320b768a70bab7b53872a21902cc066bd63d7b4b03f",
+        "meta": {
+          "artifact_key": "chromium.storage.localstorage"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Local Storage\\leveldb\\CURRENT",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.storage.localstorage\\leveldb\\CURRENT",
+        "size": 16,
+        "sha256": "0f1bad70c7bd1e0a69562853ec529355462fcd0423263a3d39d6d0d70b780443",
+        "meta": {
+          "artifact_key": "chromium.storage.localstorage"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Local Storage\\leveldb\\LOCK",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.storage.localstorage\\leveldb\\LOCK",
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "meta": {
+          "artifact_key": "chromium.storage.localstorage"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Local Storage\\leveldb\\LOG",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.storage.localstorage\\leveldb\\LOG",
+        "size": 449,
+        "sha256": "eae8d045ecddb888878f81e2254a40e6db4cab97997a4d8d6c41fb44050f49a0",
+        "meta": {
+          "artifact_key": "chromium.storage.localstorage"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Local Storage\\leveldb\\LOG.old",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.storage.localstorage\\leveldb\\LOG.old",
+        "size": 329,
+        "sha256": "e94e1333ba98081d6165e7e13a92b724dc1f26f894ec519ca6fc6e68b34819f8",
+        "meta": {
+          "artifact_key": "chromium.storage.localstorage"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Local Storage\\leveldb\\MANIFEST-000001",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.storage.localstorage\\leveldb\\MANIFEST-000001",
+        "size": 515,
+        "sha256": "73ca7c19200d1e0b6bca47b951ace454b080e97788e3cdb2e5599d246d5bc142",
+        "meta": {
+          "artifact_key": "chromium.storage.localstorage"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\data_0",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\data_0",
+        "size": 45056,
+        "sha256": "440bb87e6b1249ddb916f142d0e10a9bd45027a671d4c5fd9a93a33339ea226c",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\data_1",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\data_1",
+        "size": 270336,
+        "sha256": "b3e76c223eed36c42aa56b111c81d2f845c0d9ab6c3e93d2990562637c688158",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\data_2",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\data_2",
+        "size": 2105344,
+        "sha256": "acc8bc4c03ea1909c166e624d2e8bd1dae719d873c75e0739b265ec9257569c7",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\data_3",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\data_3",
+        "size": 4202496,
+        "sha256": "065b2667759554710a9c76928c00ff2504b30713b4ca41ebc2f613d7fc2ace70",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000001",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000001",
+        "size": 16662,
+        "sha256": "9f112bf0f28f4ae9ca29dd6ca71dee2bfc24053ec049814ae2aa1a450d522a9b",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000002",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000002",
+        "size": 251972,
+        "sha256": "46059a80ce3764cc91925dfcb5a5566be11ca3defb5878ca92b83e1fa7666875",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000003",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000003",
+        "size": 215353,
+        "sha256": "1da07f97d85e3eda87cc23a6789db7a41538f506adaeaa396548104ca44efcf0",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000004",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000004",
+        "size": 40763,
+        "sha256": "cfff6b8a6eef85a577cc6043cb8216d72494764804f3c2b3797184a294dc6338",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000005",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000005",
+        "size": 4429318,
+        "sha256": "03ad35f94f14b42d337243eb10c113b8c9477b1543590d8289bf98b54c39cd79",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000006",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000006",
+        "size": 411028,
+        "sha256": "b8e4829d1f15cf862883053662620b7643c3481f01ad3e699d421cc6d727fd82",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000007",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000007",
+        "size": 37151,
+        "sha256": "0aaa7ce5a99f8bfa592b23373c8f2cec2ec9c17625c5ae286654390144d0e14c",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000008",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000008",
+        "size": 18997,
+        "sha256": "aef817f87315fba6567447ee2f6057d02723440ffcdaeb4b0c6d9e2121053937",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000009",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000009",
+        "size": 29251,
+        "sha256": "b1d6fc6b760299102ce06951966119603e4b4826ace7e825bbb08cc111f89e7f",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00000a",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00000a",
+        "size": 66521,
+        "sha256": "bdafd322ae41ff9f132acb6b5f7b51253ecb5eebada8af6b6bfc4a08a05cf92e",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00000b",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00000b",
+        "size": 17742,
+        "sha256": "c46bb943ff3abb0d10eb2bc6998690ead8feedcb0db5985b397a2a338ac4a277",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00000c",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00000c",
+        "size": 21216,
+        "sha256": "18c18b8668801ab48f733ee57d8808510af01d654176e66aedf4f73694402dee",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00000d",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00000d",
+        "size": 43364,
+        "sha256": "b78fb569265b01789e7edd88cfe02ecb2c3fee5e1999678255f9b78a3b2cc4e8",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00000e",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00000e",
+        "size": 39724,
+        "sha256": "13da02ce62b1a388a7c8d6f3bd286fe774ee2b91ac63d281523e80b2a8a063bc",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00000f",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00000f",
+        "size": 29570,
+        "sha256": "3379b5a20d7e5bc211d8b0a1a8324ad5260857a37ada0b1699121dd3fcdd3d09",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000010",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000010",
+        "size": 23048,
+        "sha256": "0b823ea319897b6f8b1086059fc98f10eceb9bb1941642d8b70e2a7f1c6d2e2c",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000011",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000011",
+        "size": 45868,
+        "sha256": "5d225b25d66b30563a00f395476ed701130d3f749620a63531cea09fc537164e",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000012",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000012",
+        "size": 179380,
+        "sha256": "a981989aee5d4479ffadf550d9ecff24a4ac829483e3e55c07da3491f84b12ba",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000013",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000013",
+        "size": 161828,
+        "sha256": "7d7ee920643cedff307aa22759fa552cf0ab8ae5b979620ad76cc2207b47b268",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000014",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000014",
+        "size": 139388,
+        "sha256": "234feb9a8a2c759d00a4959506a3b9cb94c772186a2d117aed973347c7ef1891",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000015",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000015",
+        "size": 18772,
+        "sha256": "65330372f4a266c1b6ea9d491ea179198dc6d54b595fbd929425d7a25d182dd6",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000016",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000016",
+        "size": 137140,
+        "sha256": "426ae06cd942849ab48b84c287c760f3701b603ebcc5c9aaa4a89923ef5f058e",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000017",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000017",
+        "size": 420303,
+        "sha256": "302abbe1ca0d87b7b4f8ef37e39ff547c9704a9249ab27f1795a6dda21b12f19",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000018",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000018",
+        "size": 48558,
+        "sha256": "07de932985af3de0775256688e95801d57979564fad4748a76ca1d67940e4068",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000019",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000019",
+        "size": 20312,
+        "sha256": "f088e3d5b103c2b9bccd7589f433da056342e55e82b35c8df37056d6f04c5ab7",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00001a",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00001a",
+        "size": 43534,
+        "sha256": "b32b19409192cbad3d6089fea2d660daa9ea95f6d14e2add7bc472e75a766dbd",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00001b",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00001b",
+        "size": 31366,
+        "sha256": "56d3bde95cff9b9487800696ace0d53b0c7811cd9e69704e16c8c876927113ea",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00001c",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00001c",
+        "size": 36160,
+        "sha256": "51e8bbe0bcca5ae7f152ff5fb6db1fb78044080258fb4203a78784ad88f95781",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00001d",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00001d",
+        "size": 53014,
+        "sha256": "ac839b78c4d26181f3b0b0733df43790e77ab89baad20d7463630c382e294381",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00001e",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00001e",
+        "size": 17092,
+        "sha256": "4d537e12b121041b423fb0fd3bdc80ad4de21815bf05045f7e4b9cb36e8bdaab",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00001f",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00001f",
+        "size": 130635,
+        "sha256": "e36f32761ce252097b21a96957bcf0c0559a64a5d1eb0ae02f525aae3fb800a6",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000020",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000020",
+        "size": 255899,
+        "sha256": "17448d379dcf39f46f59741be9921e288ff85ee2492d7b65cec9c88b799b0629",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000021",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000021",
+        "size": 22947,
+        "sha256": "73343b707ed383bfdb359923695f6d5d84e1c90890122c831e9d1cdcb26e2dea",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000022",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000022",
+        "size": 43245,
+        "sha256": "1f62722488f085ab34390db02cebd0f673322a17b30777b733f42bc46e9b51f3",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000023",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000023",
+        "size": 44484,
+        "sha256": "38d904311099e63e1d9f7ce07e08a6fa104e8ef6cce04bffcea55793a2047c91",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000024",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000024",
+        "size": 31369,
+        "sha256": "9cda4e335af082c2661c06d967a1644918aef33cbfa1bccabad60d3e2483a847",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000025",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000025",
+        "size": 30729,
+        "sha256": "fb9fd2133ffb22f6b8fcc1a75a79bcfde9ff8b39fcf1c44e9aa378c480fcd86b",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000026",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000026",
+        "size": 145177,
+        "sha256": "eb81eee02fa07acd01010e6f2a7e0c4f683fbebb5fa4dcd3ad4baf9527b331b2",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000027",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000027",
+        "size": 261751,
+        "sha256": "a461545f691cef586a855cae1aeec72ada628be749a509f47fc10580a79aafa8",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000028",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000028",
+        "size": 247864,
+        "sha256": "b5012e192ed23945496517a8cfd7a45edffad9fec611d36c95533d8bfd244b19",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000029",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000029",
+        "size": 38156,
+        "sha256": "8e401b056dc1eb48d44a01407ceb54372bbc44797d3259069ce96a96dfd8c104",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00002a",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00002a",
+        "size": 54376,
+        "sha256": "d79727aa0b17b5ed190c3c32d7167ad3d4053864d35523517d36de9f262021e6",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00002b",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00002b",
+        "size": 20921,
+        "sha256": "1402b73aee0f2dd2e2db98a94f7d575c527ba5bdb3dade7e4682168fb3248cc9",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00002c",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00002c",
+        "size": 39424,
+        "sha256": "440ad8b1449985479bc37265e9912bbf2bf56fe9ffd14709358a8e9c2d5f8e5b",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00002d",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00002d",
+        "size": 39764,
+        "sha256": "ae99aaede2f373187a4fe442a2cb0ab9c2945efbab01cf33e01be517c0c4f813",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00002e",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00002e",
+        "size": 19688,
+        "sha256": "1e7f6ea1298758403297e8f9049b072db59dceb3518186164ffc16550c5c5ac3",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00002f",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00002f",
+        "size": 18346,
+        "sha256": "dcc89cdb9dbf79c2291ea785942e02a6a2672c67deba2147e7a56a81510a0b71",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000030",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000030",
+        "size": 25458,
+        "sha256": "36c51b5b4d516ea43a56b5c80882891fe7b8ee229ac138af6fa11ae459828f6e",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000031",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000031",
+        "size": 24257,
+        "sha256": "80887bfb8e6e306e46efef712a49ec4147a412281e740fbb79d456eadfdd169c",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000032",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000032",
+        "size": 20132,
+        "sha256": "a950aa3f2ae6a41619d0d3ae26e288f40e9746ad1e57d8a68650a9515399edad",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000033",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000033",
+        "size": 31482,
+        "sha256": "223317c95a1397d44979e34da177335888a806869482581397ab1485844dc74c",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000035",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000035",
+        "size": 41540,
+        "sha256": "8074511a8571acab2b22f3cd69850a713a17a701e87a608ee2fdf7a8fbd0fdf6",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000036",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000036",
+        "size": 42638,
+        "sha256": "ae4b74870df9a4e415c526c213f1a45a61f79ff06a8d3c762f80a1021a4d5c5f",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000037",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000037",
+        "size": 34552,
+        "sha256": "e19292c132e6b5d3416338f27f36e53d3a449675127e228c16d988c1ae83bfba",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000038",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000038",
+        "size": 25577,
+        "sha256": "02aa685c8c1c752d36cd3771acb07d1181db01747841802fb021298c3f4f7842",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000039",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000039",
+        "size": 45887,
+        "sha256": "29033bcae1ad64fa2c0d1cf656419cb568f95ca82a7b6fb41212931823a633cf",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00003a",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00003a",
+        "size": 230153,
+        "sha256": "642ec21b5aab463d3dbbbf47cc9260114eec4368ade49fbcc80d245506c73dcb",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00003b",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00003b",
+        "size": 39111,
+        "sha256": "0891249fd0705a151ac2a10a0bc3d6a438ec75aba8b0bd82c0115af85c74f565",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00003c",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00003c",
+        "size": 183513,
+        "sha256": "b8fdeb37cd7e1272d018579333b75347a11d8c471d8ebbcb94d850735aebb45a",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00003d",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00003d",
+        "size": 22565,
+        "sha256": "4bff62ef86266f83a3c00d0ad01953c11f9b6d77fe82d8577eded58ed029b9ce",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00003f",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00003f",
+        "size": 25760,
+        "sha256": "e98e14320ed629319eb51b3b6c4dc70fe05155d24a626010e464b49da1cebf53",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000040",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000040",
+        "size": 29742,
+        "sha256": "92dfa70b54e4c13de3a3cb52d197e68a20a3d6a0cfda74e1e7598a145eb12c70",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000041",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000041",
+        "size": 1473640,
+        "sha256": "e76c7fa748757479dd3dd4a4e7d864c033cf9dd7ac86f6cc14ecd3add6d62c9a",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000042",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000042",
+        "size": 328703,
+        "sha256": "477c3ad9764f37e0991cbcd8a222b8270988e9dd81e5bb3a88f47944fd5e1c4d",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000043",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000043",
+        "size": 223257,
+        "sha256": "5d90dc1e412ad3aa0b39088fba382025e32b718d7bf5d797512be9701b5f53b4",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000044",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000044",
+        "size": 32551,
+        "sha256": "dee4468bbafb321b159dcab42f52d1fbfb1d01358437e0a3088c3345979211b8",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000045",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000045",
+        "size": 35685,
+        "sha256": "690b64977594baa41c7978d76259224f67799ba337df2d1045dce970ef82b243",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000046",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000046",
+        "size": 36517,
+        "sha256": "45e1d86a85dba206ebe580ed924b07a2a1b3d85d1584aa04f69471b1efbe93df",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000047",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000047",
+        "size": 19344,
+        "sha256": "f630daea77a897dbdabe144bbef12dd28963c54fcbf245da1f431c29d5fe31da",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000048",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000048",
+        "size": 276314,
+        "sha256": "efa932b68cc4d9081cf8bcc95b96d4cbf7d066a793145adee56dc3e2b7205fd0",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000049",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000049",
+        "size": 329193,
+        "sha256": "77ee2adde9528ce914ae5d6375d363ccd1701f352cff3ab112a29e1b7640ae0f",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00004a",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00004a",
+        "size": 40320,
+        "sha256": "a49c4b1caad3c192e54d4e51c8ec7ff4dd40587a185da81a1dba6941cb6d26dd",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00004b",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00004b",
+        "size": 19403,
+        "sha256": "d042ca1081e5176892434b58c6d8b84b4fefbd7a3b353d5b9e43af4bf25fda80",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00004c",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00004c",
+        "size": 204744,
+        "sha256": "5b8255d591d6a844f4626423067e5cb055fc348b19e70e9186c0adad78d5877f",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00004d",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00004d",
+        "size": 49140,
+        "sha256": "c0aff213727e37434d60d57a2e728a1aa52d90e6bc19d8f5f35fda82ba5a2afe",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00004e",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00004e",
+        "size": 44512,
+        "sha256": "4b06f09791aa0268225c374f7b1eeb061b04d2dc86caf642614298c3b23bbfd9",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00004f",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00004f",
+        "size": 51368,
+        "sha256": "32add4f11557e38083dc2197531f8573c0b76f91f7c50511fa26bf16a43132c4",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000050",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000050",
+        "size": 116896,
+        "sha256": "be07047e5ae00bc4dbb0f2dae322e27fcba6314fab39d7b61eccc4d750968847",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000051",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000051",
+        "size": 276905,
+        "sha256": "b5b5b5fbcee21d6343163cdf36a0af61139030238d9ec74e3b37bbfc7e5bba7e",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000052",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000052",
+        "size": 149336,
+        "sha256": "fd2827c8f0a7f1512e3610eb844add0477fd1426fdb3cac0eae60af52994f5bb",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000053",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000053",
+        "size": 181532,
+        "sha256": "1b03dae61d613604b3d41d61cc4bc2e05f19bd27c7ff2638242f9036f2b8794e",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000054",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000054",
+        "size": 1247223,
+        "sha256": "63c07cbad569e4d5aa8ab4113db402acf179213253acd60bfec4432b1402f10c",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000055",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000055",
+        "size": 186744,
+        "sha256": "c1d71bd80fc3ecf5ef1a97092a456a046d55fd264be721f2a25be3e59ccb8b2b",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000056",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000056",
+        "size": 516852,
+        "sha256": "58bed2830915f8a353daee3e8795f32ed09174b9c7f46d4ec897286bf734884c",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000057",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000057",
+        "size": 261643,
+        "sha256": "c5396aee61c9f6c3e6828e956573df606fbff71aa9fef71c067bb9c30e48a338",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000058",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000058",
+        "size": 160381,
+        "sha256": "313818d6b177a70fbe715a5142d6221ac1a1851eff5a9f6df505670ddcd73074",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000059",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000059",
+        "size": 866637,
+        "sha256": "6bf5e17d36579873ce0ba2fd52527ffdf4e4e7b3e07c48776b369dbb0ce63a60",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00005a",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00005a",
+        "size": 34221,
+        "sha256": "6130705a61478f82c87032a059eb65afd4ff510ad4bfaef0375e77ae514edead",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00005b",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00005b",
+        "size": 151117,
+        "sha256": "d7219c4ab15907f92290aa854230e307c8aa9c43131ea6672213ace483d322a2",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00005c",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00005c",
+        "size": 18120,
+        "sha256": "ecde5879c1082c9c3e1821195ae77f287a48d4821791ea2dd5e7dd5f9a975dff",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00005d",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00005d",
+        "size": 26168,
+        "sha256": "91c0c2686c9dfb8a7f8fbd238bf646e66d45464a48a517b66ddc7f94e6ee8858",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00005e",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00005e",
+        "size": 217984,
+        "sha256": "614ab4b17ffb81fc2456aff03e0cea9b79f28e6cf420d956466179a8f02b4699",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00005f",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00005f",
+        "size": 17635,
+        "sha256": "8858c080f0393b60fde4105a13a84fe6eebf6f31f8dd24b8ae83864c7e9162d3",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000060",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000060",
+        "size": 40424,
+        "sha256": "80ea5f1aabbe41c65a0352b56d2be8c409d44b8ab475a14997b7d9986de0029b",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000061",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000061",
+        "size": 44768,
+        "sha256": "e49327d4031ae5a64fc4b042b110ed57407b256aabf78b1a4b06639789a88dc8",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000062",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000062",
+        "size": 31513,
+        "sha256": "b1750fdb3bb3285c126593b9d7ed25f5e03ebcd75593c1b2d8000db2efb44293",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000063",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000063",
+        "size": 187596,
+        "sha256": "8390503760c8f26556001a28e7d95e4a237a4780e7ceeebf0853ce252fde4ba8",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000064",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000064",
+        "size": 733139,
+        "sha256": "e4b3d332411fb9c0baddd202c5f20459fdbab62a6bf957ec07b35a233124e573",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000065",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000065",
+        "size": 189756,
+        "sha256": "3cb7a73b454fdc7290f8188282def2e97a24ceef1312295730a5bff2ef9e96c6",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000066",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000066",
+        "size": 182207,
+        "sha256": "c6777fbd14fb378b5f2fb0a27daa970f1011182440afc2259dc39aa405a387cb",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000067",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000067",
+        "size": 258717,
+        "sha256": "b0a198a7e5b611660a67c860a456f1656b50a5203a39881ea9366dcf1627e4a5",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\index",
+        "stored_path": "snapshots_staging\\discord_ft_2_snap_8572339de2194f3f8888c8ae783ea70a\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\index",
+        "size": 262512,
+        "sha256": "fc09efd7410886eb01b6ecfc162db62935389256894ff6ab52620839219d426e",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      }
+    ],
+    "summary": {
+      "artifact_count": 126,
+      "total_bytes": 25976567,
+      "zip_sha256": "69f7f9db47bb600c1e698bac61e9571b811fdf4b91389b36367b1586b3511d6e"
+    },
+    "environment": {},
+    "repro": {},
+    "notes": ""
+  }
+}

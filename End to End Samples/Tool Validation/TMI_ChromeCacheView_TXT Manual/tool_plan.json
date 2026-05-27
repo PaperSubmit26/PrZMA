@@ -1,0 +1,40 @@
+{
+  "tool_plan": {
+    "tool": {
+      "name": "ChromeCacheView",
+      "version": "unknown"
+    },
+    "objective": "Read the Google Chrome web browser cache folder on Windows and display a list of files currently stored in the cache, with associated metadata, and allow exporting the list and extracting selected cached files.",
+    "required_actions": [
+      {
+        "name": "browser.launch",
+        "why": "Creates/updates Chrome cache entries so the cache folder contains items for ChromeCacheView to enumerate."
+      },
+      {
+        "name": "browser.goto",
+        "why": "Generates cacheable web resources (URLs/content types) that should appear as cache items with metadata."
+      },
+      {
+        "name": "browser.close",
+        "why": "Finalizes writes to the on-disk cache so Cache_Data is in a stable state for parsing/export."
+      }
+    ],
+    "forbidden_actions": [],
+    "required_artifacts": [
+      "chromium.cache.cache_data"
+    ],
+    "trigger_actions": [
+      "browser.close"
+    ],
+    "completion": {
+      "type": "required_artifacts_present",
+      "detail": "Complete when the Chromium/Chrome disk cache artifact (chromium.cache.cache_data) is present after browser.close, indicating on-disk cache data exists for ChromeCacheView to enumerate/export."
+    },
+    "action_intent_guidance": "Action Flow: 1) browser.launch: Start Google Chrome in a normal browsing context so it will write to the standard on-disk cache. 2) browser.goto: Navigate to a few distinct, stable, cache-generating p",
+    "_provenance": {
+      "model": "gpt-5.2",
+      "notes": "3-stage TMI: IR -> bounded mapping -> tool_plan (leaf artifact keys only; with JSON repairs)",
+      "platform": "windows"
+    }
+  }
+}

@@ -1,0 +1,3041 @@
+{
+  "ok": true,
+  "run_id": "PrZMA_ChromeCacheView_URL",
+  "snapshot_id": "snap_adedccadaff848758614629ecfb05218",
+  "agent_id": "A1",
+  "manifest": {
+    "schema_version": "1.0.0",
+    "run_id": "PrZMA_ChromeCacheView_URL",
+    "snapshot_id": "snap_adedccadaff848758614629ecfb05218",
+    "agent_id": "A1",
+    "created_at": "2026-02-01T11:43:34.838422+00:00",
+    "trigger": {
+      "schema_version": "1.0.0",
+      "type": "event",
+      "reason": "event:browser.close",
+      "action_id": null,
+      "action_name": "browser.close",
+      "agent_id": "A1",
+      "scheduled_at": null,
+      "meta": {
+        "rules_path": "interpreter_out\\PrZMA_ChromeCacheView_URL\\tmi_rules.json",
+        "catalog_path": "Snapshot_Engine\\artifact_catalog.json"
+      }
+    },
+    "layers": [],
+    "files": [],
+    "artifacts": [
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\data_0",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\data_0",
+        "size": 81920,
+        "sha256": "e62a7b92ab6d798c59792666cc93224ea737cddc4d5c44e065b9e49d6141e00a",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\data_1",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\data_1",
+        "size": 794624,
+        "sha256": "f601f9f85b40d600953997bbec43e0745ef0aaae993d534e47388ad362c26208",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\data_2",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\data_2",
+        "size": 3153920,
+        "sha256": "d5f4f7a629b5f30dbe7b4dbcd568ad92eb15abe57270b9ca0158d4c732c5ae8e",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\data_3",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\data_3",
+        "size": 8396800,
+        "sha256": "b2aba5a88b6ff44d36cebbbcb5d24c278109ca8302926eb840d5b71d1e01e800",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000001",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000001",
+        "size": 52480,
+        "sha256": "fbaf803201bc60aa1ee2d025c33934a0e582bddcc85ab5f8c35c76a98582457f",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000002",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000002",
+        "size": 27247,
+        "sha256": "fe00f72214905643a1f7ac40210ba75b63c5a08f636c167de93b713a2370240a",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000003",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000003",
+        "size": 247020,
+        "sha256": "095d6b1bdef49d097110f5435f31fce97dbe114a23cbb83770b4b7a9d0fbe838",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000004",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000004",
+        "size": 221968,
+        "sha256": "dad2c779260191bc48dc81d54a357c8c3ccffa20b72cfb822f576edc243065c1",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000005",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000005",
+        "size": 235966,
+        "sha256": "92583ef5c4c47d7db9fc385a565a4d4fd195b8e290f6c16ce56e8db970cbc1cd",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000006",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000006",
+        "size": 4512894,
+        "sha256": "6be6dc9fa8915843d38289a45bc8e3f3aff486082cc0bf5abd7689695c3cec19",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000007",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000007",
+        "size": 18915,
+        "sha256": "54d9ed026d26bb83612e92ed908d0a5ed4610b2ee9ebe678662c8a28bc452946",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000008",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000008",
+        "size": 29223,
+        "sha256": "27bc56b7700a92af00ad95de484d332e08ffd305b58c0bbd0e2d90e30bf74bd1",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000009",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000009",
+        "size": 18637,
+        "sha256": "070c4ce45bc4cb854a4d50652f085637b2f07ff8bd17b9e7084bd836f26d1462",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00000a",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00000a",
+        "size": 43364,
+        "sha256": "b78fb569265b01789e7edd88cfe02ecb2c3fee5e1999678255f9b78a3b2cc4e8",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00000b",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00000b",
+        "size": 26057,
+        "sha256": "e5922c55dd828ccd8e514e11a1e549feacdff8f598f1d51e32ff4958a0b62ed5",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00000c",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00000c",
+        "size": 39724,
+        "sha256": "13da02ce62b1a388a7c8d6f3bd286fe774ee2b91ac63d281523e80b2a8a063bc",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00000d",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00000d",
+        "size": 54714,
+        "sha256": "16c8f25d4a53951bc6fbaaf9e7fd70a4e7baae38db467da91fb227badf25e2d1",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00000e",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00000e",
+        "size": 66380,
+        "sha256": "977e62576f4eb75333508fd2609c53420a12f0bd321a7631bb821cd3d36b3a9c",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00000f",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00000f",
+        "size": 37172,
+        "sha256": "385d495a0049de389f66e2cc8a42c367a21e72d3e634ab056490af047539417e",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000010",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000010",
+        "size": 139388,
+        "sha256": "234feb9a8a2c759d00a4959506a3b9cb94c772186a2d117aed973347c7ef1891",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000011",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000011",
+        "size": 45868,
+        "sha256": "5d225b25d66b30563a00f395476ed701130d3f749620a63531cea09fc537164e",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000012",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000012",
+        "size": 38156,
+        "sha256": "8e401b056dc1eb48d44a01407ceb54372bbc44797d3259069ce96a96dfd8c104",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000013",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000013",
+        "size": 19064,
+        "sha256": "80bc4f6523c464c0afc79a58f12022209eb12d0118fffa74a21c036fb4ff1ceb",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000014",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000014",
+        "size": 29123,
+        "sha256": "2897b5c48312f26fa17f826005df2f8b1572b3f941f6f8472e8c68b57bcf1b70",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000015",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000015",
+        "size": 28789,
+        "sha256": "834449e6228c4a248024301e1350b9cf935a90c5c12b91cd272c867861fb43b5",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000016",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000016",
+        "size": 19546,
+        "sha256": "ef26f672c80798d3d3178aa932d464410aeef033e2fab4df5aa07630452f5fd9",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000017",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000017",
+        "size": 179380,
+        "sha256": "a981989aee5d4479ffadf550d9ecff24a4ac829483e3e55c07da3491f84b12ba",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000018",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000018",
+        "size": 137140,
+        "sha256": "426ae06cd942849ab48b84c287c760f3701b603ebcc5c9aaa4a89923ef5f058e",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000019",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000019",
+        "size": 29378,
+        "sha256": "b5de2bbb5bc69fc5e7b6d0eb72cdbadd38e0a2a5364eb0390a898976287c50e3",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00001a",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00001a",
+        "size": 48519,
+        "sha256": "063b2920fb78364e60f633766aa520e2e032c29389cf866800d4b49920b3b329",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00001b",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00001b",
+        "size": 46508,
+        "sha256": "0b48c8626e387b42ad5e4374d2d354f7543e29e6beefcc09d7b4d18b97659c67",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00001c",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00001c",
+        "size": 53176,
+        "sha256": "c0487681bda884997f4eeb7c3e2699d402b56fceae8ac765685d5f12e06f9a3b",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00001d",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00001d",
+        "size": 33474,
+        "sha256": "7907cb5fe976a074a1257047e4a5f0a154ec5dda83db19e3138d78b753955683",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00001e",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00001e",
+        "size": 35449,
+        "sha256": "61d602b5f13a3fd65652748e44715c2c1b7b173f4539edec0eb6fbca54316fb9",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00001f",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00001f",
+        "size": 52764,
+        "sha256": "aa5dc874d5bdb5e72d50ec34f8f0c0cc8bcb03555a521e97b5971d9dcc3264dd",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000020",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000020",
+        "size": 54885,
+        "sha256": "628e7d69acc1c92433f86686ff59f13dc06b4be2cd3e20ed5a82b2068ae121b3",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000021",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000021",
+        "size": 148011,
+        "sha256": "7bab6a24cc28837ca92c3bff57b428c09cb150f72aae72a4ba02b2f9b622c90d",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000022",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000022",
+        "size": 165578,
+        "sha256": "f7b579099a5bce19e82ad18e4cc76851ec39c21d96e835c5458d2ddf5232cf4f",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000023",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000023",
+        "size": 261155,
+        "sha256": "059a29aca96c29b5cc5617bd6ca251d1e52a57c7f3524773b21ec5ba318a36ff",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000024",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000024",
+        "size": 240598,
+        "sha256": "3d3a20ec93a013cd93d1d6cb45e9b5b656e9c8205acc4a9db7d8504de04bfb99",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000025",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000025",
+        "size": 421136,
+        "sha256": "511bc2166e506c99dd8640ba715dbdaf273495ea71a29293cda639ca060e7065",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000026",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000026",
+        "size": 415383,
+        "sha256": "47da28957240359808a67cb23f6261a00d3482f4149c2b8e1540f9a3aadd5396",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000027",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000027",
+        "size": 21458,
+        "sha256": "bd9c5fcfaf7cda3ba8666f0189ae6cd080836f8b2fd6980a08a9a342dc074d71",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000028",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000028",
+        "size": 25424,
+        "sha256": "2c804349fa3c6156673197ecb6bb08b415bc0494aeefbcb7ba5b7d3c9ab09a30",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000029",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000029",
+        "size": 18414,
+        "sha256": "c922b6a4909ea64bf34bc92bddb5dce698fac43e17e1bc50ded38f9914cf466a",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00002a",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00002a",
+        "size": 24371,
+        "sha256": "a8de4394261978b0fca392a6086aad19b33e6477445d74c882bf2c6d228daf79",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00002b",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00002b",
+        "size": 33620,
+        "sha256": "9094381380ec43878825a74839836cfda6d1b35bc669819472288756c1da7b89",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00002c",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00002c",
+        "size": 31573,
+        "sha256": "491939b06d810ac864ec608adafc1bac9f023e258e37a4d185b3eae910328ba3",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00002d",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00002d",
+        "size": 43709,
+        "sha256": "b83880845650d26c0440773158e2af5a87612d5615d84d1e79aaba5042318710",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00002e",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00002e",
+        "size": 38340,
+        "sha256": "9135d7f07fc28871d4f4da6093c5e444f2153775e075653e0da4a8e789bdb2c2",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00002f",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00002f",
+        "size": 35359,
+        "sha256": "ccec294be7cdf47d9543a1ee538ac4620bfc04e06ce4d6d501eb0b71c3284959",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000030",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000030",
+        "size": 55681,
+        "sha256": "4ae99840522ab2883d3a80dc829990beb3e7f8d76c7cb93f86dac207b4d15621",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000031",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000031",
+        "size": 227189,
+        "sha256": "7ca589b29b1eb74ed7f09f2b329bed931852769a5041c337849bc06cd1bd57fc",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000032",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000032",
+        "size": 193240,
+        "sha256": "d46059041f241e34c7824dd929855a93441d7efebe0be0badd1b066d9aad43d1",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000033",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000033",
+        "size": 20994,
+        "sha256": "5af5ffb5b47acb35a322b1b8918d79196f9434b2774cd9d5e76c89b477e7ea37",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000034",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000034",
+        "size": 29544,
+        "sha256": "e50254a6291ea020b66e2f1632c1a103dfd581251ab5edb2f88492cc3c774773",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000035",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000035",
+        "size": 39424,
+        "sha256": "440ad8b1449985479bc37265e9912bbf2bf56fe9ffd14709358a8e9c2d5f8e5b",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000036",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000036",
+        "size": 39764,
+        "sha256": "ae99aaede2f373187a4fe442a2cb0ab9c2945efbab01cf33e01be517c0c4f813",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000037",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000037",
+        "size": 48196,
+        "sha256": "6ad475f5f5f773d0546d7e2740d324281d5318aa6a3f597b0ece58de9918a96d",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000038",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000038",
+        "size": 18278,
+        "sha256": "f22d4cf5f0724f61754cd8b0cbe8f3f4ab9acb7794fddde7048f90e94665b8ec",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000039",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000039",
+        "size": 85541,
+        "sha256": "27201f186e64fd4fc1cfb94ba370b4f1ffbacd5cba094248ec3cc53d5d0f523b",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00003a",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00003a",
+        "size": 269261,
+        "sha256": "df6f035d04877874ad5104f8959734ee8450958906923fa4bd6d96dbc645ad2d",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00003b",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00003b",
+        "size": 21390,
+        "sha256": "652c695904bc7f0427931acd1988b101a27a14abebea2ad7b57c2fd725529435",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00003c",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00003c",
+        "size": 1846264,
+        "sha256": "007df56fd0157c27ce9e42173d7df4d99ad2cd22df5540e6071662498d35be80",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00003d",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00003d",
+        "size": 40128,
+        "sha256": "20b535fa80c8189e3b87d1803038389960203a886d502bc2ef1857affc2f38d2",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00003e",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00003e",
+        "size": 32128,
+        "sha256": "9cc1a70e9272a9bbecfbd23237be267dacb4044ffe12b0bf4372b8b6a9104994",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00003f",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00003f",
+        "size": 60472,
+        "sha256": "5cda88655bee931f1ec52ccd3a1e041cf49698ced72c87622dd3af2f973fca94",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000040",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000040",
+        "size": 22200,
+        "sha256": "652ae512ff2aa41ed4d330307f0ab0306df0c374bd1fc4eb5be15f3c1d9f3b96",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000041",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000041",
+        "size": 637429,
+        "sha256": "4a41353bd7bc36fc9aa33fae0c340ceb46f77b7e993582958e80705d41cd9045",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000042",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000042",
+        "size": 53775,
+        "sha256": "96fc129f7cd54cd5c58f359c308a4b0e2fdbc4f27deb3c0ea62835c006ba9537",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000043",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000043",
+        "size": 26861,
+        "sha256": "d9754660e2f67029987287b925c44870e9b3675517235f9e0a21cb309513a071",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000044",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000044",
+        "size": 35133,
+        "sha256": "7623a001958bc4aab25e9fe3f002ccd9862e19016583e4c0d20d9916aea6e58d",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000045",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000045",
+        "size": 26246,
+        "sha256": "f2f6b2e48b4861362ee01a8bb6e8c6225ae501c075437704a2ce30b67e64c5de",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000046",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000046",
+        "size": 40086,
+        "sha256": "977826cbce32a38c577c1bb024497f1a2c4c729adf1fee17f1c38d55aead1c11",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000047",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000047",
+        "size": 251848,
+        "sha256": "e50760ea69dc2d195677b8f635293f7a27814957fd70bf1832b2550fe49e818d",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000048",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000048",
+        "size": 16644,
+        "sha256": "da897f18286a1b93951c77bccf8199faf7c096679887faffe304c8d27bf58082",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000049",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000049",
+        "size": 21734,
+        "sha256": "038f7be66f43814d16d15ff722507d6c853900f9baffadee7127616a9727e7ce",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00004a",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00004a",
+        "size": 29334,
+        "sha256": "dae2b2aaefe69643f321b40a4a13b736df764312145309ad84cb2750e99e5bac",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00004b",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00004b",
+        "size": 20749,
+        "sha256": "23a062e8d8a06e2655e4b34c006218f3b05b7859d1793e42ae402b2b3c8add04",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00004c",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00004c",
+        "size": 65914,
+        "sha256": "2b9da40202b6823a7c58d80e1a0e0f1c5d815e97f19771726c16c37181602922",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00004d",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00004d",
+        "size": 205268,
+        "sha256": "7fe40fd5a6da1d0c313ff20d02e22589f3468170d817023485551f39ef6c1cc5",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00004e",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00004e",
+        "size": 20276,
+        "sha256": "b5221e0636a97505ae38720d4ef182d35be5fb47d2628428db4fc918ab7ee30e",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00004f",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00004f",
+        "size": 56076,
+        "sha256": "b4541e137fc91be6bf1b0a930fa6381e59f29a49a57b955cc29a01dfa88fecee",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000050",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000050",
+        "size": 23704,
+        "sha256": "9a43ab8056183a8efcf0e882990c2601381a735e02bba004439e010055c55d47",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000051",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000051",
+        "size": 28868,
+        "sha256": "1ecb1f9522433be3adfad377816095c7d5b27d02c1efbbbb793e341b829d83d9",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000052",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000052",
+        "size": 27260,
+        "sha256": "e444fdaa833e612d239cf21a335b8322ad8cb7c7ba697ec978bdb454f5059519",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000053",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000053",
+        "size": 29076,
+        "sha256": "48c17df8a89e5c3acb4127a265cce50218716f0dfdf7ad265267d4a013f01b2f",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000054",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000054",
+        "size": 24184,
+        "sha256": "1a48c22120ff01abb38156633970addec986b69af1e59bfaf9b8abb6673f78c7",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000055",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000055",
+        "size": 26504,
+        "sha256": "b32e3879c83af441e675efa49587cb894bdd3c10420475f79879fbfb7a69766b",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000056",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000056",
+        "size": 28276,
+        "sha256": "564385e5dd8a1058fd759445c33b2c554d409528496b9d91533eeb079f6415de",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000057",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000057",
+        "size": 19816,
+        "sha256": "0b904723c5938b523c9ae329ba2b763681cb1de225c8f202d11012cbfd533f1f",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000058",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000058",
+        "size": 20196,
+        "sha256": "29706c4ab8f4d48b33ccb0ea813f8afb5f7ac569f623536b96fba6cf1fc60e9b",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000059",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000059",
+        "size": 89519,
+        "sha256": "aa42e1ad1a1092cb72b29e9a471f67e0c85b27761d4481176af74fec256ca784",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00005a",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00005a",
+        "size": 115154,
+        "sha256": "d6b448f3697f78283749a11fc29a6b6e6455784d9cc8d7305da9ac97d074569f",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00005b",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00005b",
+        "size": 724786,
+        "sha256": "9f442a8523b864e07651953ee6dd33a37f31f87ee85259aede67bc318d6051e2",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00005c",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00005c",
+        "size": 149586,
+        "sha256": "c45e928e5197fb4fa2dadef641c5517d2dbf2dac470674ac9ef16180fc020270",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00005d",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00005d",
+        "size": 450829,
+        "sha256": "0656b4c9d472792c11769b825813e99534b2b730e30f6be96201bf17062a45e0",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00005e",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00005e",
+        "size": 196957,
+        "sha256": "78170cfc66e7f467730f5f684dcc690e22178a9d241f4b1a3c34683d950024fd",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00005f",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00005f",
+        "size": 34842,
+        "sha256": "df782a944829a8a6f282daf1047cc43990c6f51dd42716de695d7dd76af2a9cd",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000060",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000060",
+        "size": 23400,
+        "sha256": "ad01b93ecf6b0b442902d27ae93b6af83a92784a05455b81490512a3d5d8b08b",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000061",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000061",
+        "size": 24028,
+        "sha256": "7dcbc19c68e87e4b23f85027e02ac7f3c89fa259973ec92bbe27e49ad002bf47",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000062",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000062",
+        "size": 922530,
+        "sha256": "3839ffe9e0cb5e74afcf6e2e0093ae4fc30bb5480c53ad394788af4053088150",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000063",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000063",
+        "size": 172116,
+        "sha256": "32160c76225dd8ff548713e5676412b917ed878caa6bb0189b6a11a90e8d7dbd",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000064",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000064",
+        "size": 24044,
+        "sha256": "8350c055660affb5c51bfb5da63188ef2572a9b4d33a9aefe37ffcd266a4cf2f",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000065",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000065",
+        "size": 43992,
+        "sha256": "3f855ef6701e2f08e392cf54dc5326b04981d90e6e57390d7a02f5cb639e4353",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000066",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000066",
+        "size": 18744,
+        "sha256": "01cef8e18e9655b06c404e0e90c30beb0ba63796f5cdb82067d75908a2cd3d8f",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000067",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000067",
+        "size": 51460,
+        "sha256": "2a9f8e66aa8c44d0391cc9104f7668eca22fd5cbb87a88563fb62c3196b3359d",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000068",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000068",
+        "size": 201192,
+        "sha256": "ddc5c42b9c786d068cd4798c18461749b5cf57489407f1f0879554765ad21ace",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000069",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000069",
+        "size": 108913,
+        "sha256": "37bc5491c6631f8b90ab57a19859b3f0eae7ae0d13203b90f9d04d52bcf513ae",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00006a",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00006a",
+        "size": 41031,
+        "sha256": "a03a08ca7fa39410f1e1077e2900eb699761763fb86c69905857de824229badd",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00006b",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00006b",
+        "size": 18472,
+        "sha256": "6d444d1e6f52bfe57c1180cf064cab58e6941684bf09bbe236e3578fd2e23e65",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00006c",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00006c",
+        "size": 20196,
+        "sha256": "2ef59a529d7fb3a6c641248edf4a201b95d246d4764b5d10d32d219d9a486eec",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00006d",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00006d",
+        "size": 38888,
+        "sha256": "dd79f485238154c2c0abe66a3338b651609c21f3e8f7f33398d879b2d0f00976",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00006e",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00006e",
+        "size": 43132,
+        "sha256": "eb73888edb45efb94557e79a5c8665a7a4d9bd26de3b37d34a07d9984fd7efb0",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00006f",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00006f",
+        "size": 31824,
+        "sha256": "d7968b12d1c4470023adf3289d6d124a417e29352997ea087d827f7dad281aeb",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000070",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000070",
+        "size": 60510,
+        "sha256": "1f7a318d764765e691cb7e1d7d44036498b02141929c26a3b680d655e791105a",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000071",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000071",
+        "size": 121528,
+        "sha256": "df80829180d03a755ba94450ef8145eb3a683fe94aaab7f9c26a95ba5d8eeeea",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000072",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000072",
+        "size": 179738,
+        "sha256": "ceb0eb684efbd41724573aef5db881609ed866323bf2ff99e8b46cce11c67603",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000073",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000073",
+        "size": 45242,
+        "sha256": "c35db060b7d4795c07ba1f9b311ddbde40ee6609d38ba1066989b3590e4f4406",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000074",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000074",
+        "size": 130538,
+        "sha256": "9e0446186b29c26a2b4e6a9bfd212779c98213149aab614770eec596ab2834ca",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000075",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000075",
+        "size": 30638,
+        "sha256": "e4e53fef7b814459a9d88a90513e6df308bd0aec7f2c0d58f5813246783f23ca",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000076",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000076",
+        "size": 23700,
+        "sha256": "17eb414763df74119aaa90f67c23854b3b01290d790ce7817ae8df3ed116d469",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000077",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000077",
+        "size": 35297,
+        "sha256": "321044b61a72311b52ee8109ae5d61470c519e802e20a392f5ba14ed26a1ce60",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000078",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000078",
+        "size": 37760,
+        "sha256": "a777d5a2ae762cb194bdbba3276b2230962f19683463b97975ccbc721f20fa5a",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000079",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000079",
+        "size": 90993,
+        "sha256": "31f2e2fd90533d9362a03b4ce2bd07fe9c245be05c8a2d95017b53a9d05a9a4a",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00007a",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00007a",
+        "size": 81002,
+        "sha256": "b4eac30a5d20842ebe7b21190fe69150a05d8482768de4bf49ba4ccf0488c545",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00007b",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00007b",
+        "size": 79730,
+        "sha256": "00bba08a76934d8ab38cfef2ab3b03333013cc4e64563e90805bd8594a65a8c9",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00007c",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00007c",
+        "size": 23188,
+        "sha256": "708e9392d907fd2c2f1004afc85617ea21a969bf44129d04920998887eb10682",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00007d",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00007d",
+        "size": 18222,
+        "sha256": "4441c27ef6746cafdb65d4bbb429dbd72ff57bfb060735bd23d9409ae3693c9e",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00007e",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00007e",
+        "size": 59473,
+        "sha256": "a1f4ef2a9eba377608fb10ea97944e5236f687b09329550bc8d15fbfe059b4e2",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00007f",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00007f",
+        "size": 30248,
+        "sha256": "27d68528a2ee7945655dd9e469567de71dbafe4052bc88cc1b91620e425321b7",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000080",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000080",
+        "size": 24914,
+        "sha256": "c4a0b49409b2af57ed618bc1ccb0a5199963f065b3c6d66aae78f063d789ad3e",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000081",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000081",
+        "size": 18717,
+        "sha256": "d921a7a724b7c405e411bf562c22e7be60b1f1e57de033f52fff216903bf622b",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000082",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000082",
+        "size": 33518,
+        "sha256": "ac908052f6db7ee5b6fed9631aed61da914f049a411c04d374f7ba68ed57a4d0",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000083",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000083",
+        "size": 19515,
+        "sha256": "cd6fa89640c58145769f225d579066636f36e77c92716b149fcf5e71c0766a9a",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000084",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000084",
+        "size": 121794,
+        "sha256": "cdb236f7899b5bd3bda4bf1e7380257639b0df646b29afc8ce8e57430e9d3872",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000085",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000085",
+        "size": 92203,
+        "sha256": "4d5c0c9c31cb9c791d70786e54f6e98665b186d0e6d79d00e44a266bad749193",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000086",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000086",
+        "size": 18543,
+        "sha256": "5e588e71fa451932b8ada9372ccb56fbb4c18be2f9dffc47b979e7b5c99f27ed",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000087",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000087",
+        "size": 71847,
+        "sha256": "b829110431ee5c95da68764826a83fa2d4cb406c267b893ab2a0d8c688461208",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000088",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000088",
+        "size": 884813,
+        "sha256": "8e913bfdd902c9e1338c65977bfed1ca571d27cbd78ac3df2f988ca87bfdf945",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000089",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000089",
+        "size": 56184,
+        "sha256": "a9a5f1fa139c7cf6bd0e8299ad95201cb3aa5d9b05a5dc00d81a0883db844563",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00008a",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00008a",
+        "size": 92823,
+        "sha256": "a462a3d0f5767011189b9e9fac2254de3f59aa8476130e3cf7899d916752dd24",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00008b",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00008b",
+        "size": 31282,
+        "sha256": "20a1fe8a757731f2c1070aba865a3a872e314b2b9ff142b44dc1d0d1712ce157",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00008c",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00008c",
+        "size": 73402,
+        "sha256": "a93b74d97847b65a98d03ce9eb55792b8e2dd3a7d7564c4807345a765546d61f",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00008d",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00008d",
+        "size": 394733,
+        "sha256": "85d0b5a2a14b54001ba2416c6a756b4d8c86267ab209de0c9f27b496e7eab305",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00008e",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00008e",
+        "size": 25826,
+        "sha256": "af97789050b769a48d0a417eebca338868dee8e5aadf22a4461db366ad1ddee4",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00008f",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00008f",
+        "size": 111375,
+        "sha256": "fce6387a670c8d3a23a03e99ae39ce4a9af15bcd27b074cc2247a2174fd39596",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000090",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000090",
+        "size": 21107,
+        "sha256": "fbd60bb97bccfc644dd2ab9f624833bedbd4cafbb46b05f2c3b9a0e1b4dbc0a0",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000091",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000091",
+        "size": 484022,
+        "sha256": "7b153d6719a338f627f29bd006005e4a6d09f5e92295b8c6f0244dd938ef393b",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000092",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000092",
+        "size": 1351563,
+        "sha256": "9e3cadcf0efbef2892b4c779d3f14ef11287b4788221a05dba65be0f4bb259d3",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000093",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000093",
+        "size": 1490890,
+        "sha256": "c57383720ee56d7bcd1575220497375a03241303e899caed7a94dc11d57583bc",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000094",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000094",
+        "size": 621116,
+        "sha256": "f843fddad533c8aa693d9fa4a0f087b67afd3b70c942acb93240c147588e166a",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000095",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000095",
+        "size": 80640,
+        "sha256": "bf3d6975fa48ec5e91000b770f9e06401bce0dca67d9a3b8cbb6bbb86a4ef947",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000096",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000096",
+        "size": 33578,
+        "sha256": "3728d4d83428985ded8b72550ba6fa3cb8c0eedc788dff955f956bcd42cf6352",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000097",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000097",
+        "size": 63592,
+        "sha256": "94e4cfa125699631c2e76da17bff6339860671c0d3b5e4ad02e9bfbd85832e77",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000098",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000098",
+        "size": 21885,
+        "sha256": "93bd3ba54645369cd2899b15222c306e9d4df99c877c43cae7d832720f7eaa09",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000099",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000099",
+        "size": 25923,
+        "sha256": "c2f4bf54a6063924d1b86c0920ef2845f737d7457e6ace3e980bad7af5dc241e",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00009a",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00009a",
+        "size": 21356,
+        "sha256": "ef96a64a18275199d7ba71fe6da2a42f892cf81213d9d318f5a502d76b6262be",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00009b",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00009b",
+        "size": 81943,
+        "sha256": "758b4431ee9baad96f2c27b211d4217ff7dd2a4fbca90fc34472ed1f93e4b0f1",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00009c",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00009c",
+        "size": 99934,
+        "sha256": "29b05d2833cfaec6ecd12ee94bca58d3fbd5309f3bc00a1024bd1d8f5d7b838d",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00009d",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00009d",
+        "size": 133418,
+        "sha256": "baf344ec6dc606389ceb66868b870e9be4b40970ac171ac3867597d3db831e79",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00009e",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00009e",
+        "size": 20820,
+        "sha256": "37c3d584b86d9930c4acf71faebf3dadca7733079249d601762abb3c6a881ddb",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00009f",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00009f",
+        "size": 40476,
+        "sha256": "64537ddff9881ef6bd4b455250848b9c9432c3f3bd2b1252db04448923d87877",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000a0",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000a0",
+        "size": 38805,
+        "sha256": "bfb036c0f5d7b0a4e6da2390a6450fd7da2c134abdaecca20ccc359dd4d85cc1",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000a1",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000a1",
+        "size": 44980,
+        "sha256": "35edfbadb7d274933cc698de0a0d79a7930ee78f9c77b9749308b4358b5ddb1f",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000a2",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000a2",
+        "size": 33134,
+        "sha256": "41d476afd16ea772f4121cd229f25dfd3ab898afe50a78501f150e1305ac68d1",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000a3",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000a3",
+        "size": 48214,
+        "sha256": "8afa42591cb5d54baf0d1dcc33cc993707ebab466faf10928038bfda98f0cb22",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000a4",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000a4",
+        "size": 62190,
+        "sha256": "bb47cbb6efc704f7fae26a4a060a8d479bc38098455f2c973c80e2d63853f44c",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000a5",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000a5",
+        "size": 290787,
+        "sha256": "ffd7c4d6ccd4400922ef533245b6d3f1a4b625ecf48420e946cdaf312eb7d94e",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000a6",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000a6",
+        "size": 122590,
+        "sha256": "0f6982725978d7c4533a18886ca5e0582c5a030bc964db744b0de4ae86f40942",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000a7",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000a7",
+        "size": 65312,
+        "sha256": "cf53949ae979b2772510ce7ef6ec5f61072c91d2aa0625c412f29a9a229b1c42",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000a8",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000a8",
+        "size": 59740,
+        "sha256": "c2daf1f588a2908c2be252977f1ede62aef30dc7f7cbdd1802a05899b45dad3f",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000a9",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000a9",
+        "size": 47844,
+        "sha256": "3cdbe1e0c495a3b47c440e0935292f22cd3911bd68240d9076acfc1355b05707",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000aa",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000aa",
+        "size": 79836,
+        "sha256": "f01c21d3fcf79cd2864fe88016fb89ca7fd307794b846de4312ca3e5805685ef",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000ab",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000ab",
+        "size": 66468,
+        "sha256": "13af37b33a332856c4f9194d2020bea0d8e91b078aac2f68ee90940dd7fdc070",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000ac",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000ac",
+        "size": 79104,
+        "sha256": "2976e4f218a0cf62149c05efb62ac69d4515a60b28d0b0f868e1bf5ec467aef2",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000ad",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000ad",
+        "size": 110826,
+        "sha256": "c92166f4ba7d5f5bfa1abf5c1f7342288101ff3a078dc19a009d9444d3aa512a",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000ae",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000ae",
+        "size": 117717,
+        "sha256": "4445bc907af3ae431c8cbff1b1236368b94439f52b06a9584b0f5865358f835a",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000af",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000af",
+        "size": 34649,
+        "sha256": "23074ba880d7bc6bdc381c8824dfa79852c287fafca94d2a3003664667b9768e",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000b0",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000b0",
+        "size": 41952,
+        "sha256": "ecac133d8e61e807fdaa174b8a34ec66f578db59833d9329e539a8804b203860",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000b1",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000b1",
+        "size": 24562,
+        "sha256": "8bd49b7ef42e1aa086a9a67b07a383a336ae1c788983863a56cc0a654d671bd0",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000b2",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000b2",
+        "size": 33726,
+        "sha256": "eb915c59d866d2d5fe16cf8724014605e2670e07cf7a87f262449ae68e5487f2",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000b3",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000b3",
+        "size": 24044,
+        "sha256": "8350c055660affb5c51bfb5da63188ef2572a9b4d33a9aefe37ffcd266a4cf2f",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000b4",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000b4",
+        "size": 55794,
+        "sha256": "13b8d624ba675ec223b2567ac1722584f7c9e920970258bfc266bb1eeaa5c9d4",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000b5",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000b5",
+        "size": 201192,
+        "sha256": "ddc5c42b9c786d068cd4798c18461749b5cf57489407f1f0879554765ad21ace",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000b6",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000b6",
+        "size": 29124,
+        "sha256": "8871f50f67ca32ca4e9c93050cae5602ea232ae4f801dbfe1696bd7ce827107b",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000b7",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000b7",
+        "size": 33360,
+        "sha256": "60d05bdbf8b19b1c09c4c12cdb854981892bde4669a1c9f3cfa9c5aa9178794f",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000b8",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000b8",
+        "size": 173820,
+        "sha256": "fbfced772374f1fe18c3224f96f560aecc4ec07976a05ea1d27b62ec73bd6acc",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000b9",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000b9",
+        "size": 38350,
+        "sha256": "c5a217a1bfbe4e5ce106334045e1c6defd4986ca25bf38f9f394021f1e87e9e0",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000ba",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000ba",
+        "size": 191620,
+        "sha256": "e8fc588993ad606d8db9ca9ee08a466fc0257de5b4dd2fa57950b517f70e3ad5",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000bb",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000bb",
+        "size": 28395,
+        "sha256": "2d4e127dd7e934764b6fca30b69f721bcc328293a52d707a5ec73b3010ce7c18",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000bc",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000bc",
+        "size": 29513,
+        "sha256": "21714f59babde22d63a76664c158a58c263e16e24c601d3b26317a1656b7f385",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000bd",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000bd",
+        "size": 139039,
+        "sha256": "1a756c25a17d907648881c1c944147262b47f2a09749ec0dfb5aa82eb9bdc25c",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000be",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000be",
+        "size": 92823,
+        "sha256": "a462a3d0f5767011189b9e9fac2254de3f59aa8476130e3cf7899d916752dd24",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000bf",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000bf",
+        "size": 36002,
+        "sha256": "b78250151b7011352714e9a57b6166cdbe132565d84b04da7a558bbfe5a7d9ea",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000c0",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000c0",
+        "size": 20737,
+        "sha256": "2a8d2722e8670ed4d39e5df7fc83f9a2092f1925443fde8a94c494d8e7c12eda",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000c1",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000c1",
+        "size": 103362,
+        "sha256": "6eac41c0f958add0e663d4371f5896dee384b92dcf69928225ce387502b91004",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000c2",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000c2",
+        "size": 313217,
+        "sha256": "1faae6951068153b8f50e5754e518426504e40d118b41ed63b625a6ef24bd98e",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000c3",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000c3",
+        "size": 71847,
+        "sha256": "b829110431ee5c95da68764826a83fa2d4cb406c267b893ab2a0d8c688461208",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000c4",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000c4",
+        "size": 19829,
+        "sha256": "1f54fa980ebb18f0b4fc3d3b0103e3a2df6abe42ca032768e899e84fed20c530",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000c5",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000c5",
+        "size": 48392,
+        "sha256": "0f7efa7ac363b58c9dbb9a96a0263a58169a19a9832cad759f39b7b3ee753d4c",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000c6",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000c6",
+        "size": 22811,
+        "sha256": "42a5e22e732b8391911ad1e7bc37c6e28db0dbf536cc481498d5ff621c621eae",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000c7",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000c7",
+        "size": 33298,
+        "sha256": "c9294f2c1f7de63d3588f5f2c4cb308587fbd4bf8c3224df6fd0fd9f4627f191",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000c8",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000c8",
+        "size": 38242,
+        "sha256": "1714f66deaf3a457ee94d7b8e2ff81c38acddd27c65045d1a506d01c0ff3f9a8",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000c9",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000c9",
+        "size": 27234,
+        "sha256": "e1c310f58956240eea70726d77892cc185ddce06d0d7882331724c702c94fe85",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000ca",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000ca",
+        "size": 34052,
+        "sha256": "4f7f4afe26e71fa9ca1dac4a43b557a554a46f53251d849f07ed08a04829d74b",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000cb",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000cb",
+        "size": 30132,
+        "sha256": "1232bbdbc5d205f3c5a40efa5ed92839c79e7879d5168445cc47645bb93f7d1b",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000cc",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000cc",
+        "size": 28908,
+        "sha256": "6ba0d1a726f1887bd61727b308ed0be0e73edba17d4ad11b91ab19b632e078f6",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000cd",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000cd",
+        "size": 26288,
+        "sha256": "22b4df5c33045b645cafa45b04685f4752e471a2e933bff5bf14324d87deee12",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000ce",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000ce",
+        "size": 27168,
+        "sha256": "fe8a1047376498c80a157d13555e42a92ad480fcb0bcc9de51ad1930fbeb7f91",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000cf",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000cf",
+        "size": 29388,
+        "sha256": "d87d0a7a7fe2c36d1dc093bfe56e9b81b311988789dbd3b65abf811d551ef02f",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000d0",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000d0",
+        "size": 37183,
+        "sha256": "619100272d3a9e55037b39081ae8032a37b1c11aa36691288e2f6cc17c7ca153",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000d1",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000d1",
+        "size": 57984,
+        "sha256": "604b5cf09b3deb897cb09b65c4e8038fe80dff096765945b00fbdc7d04399d25",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000d2",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000d2",
+        "size": 32623,
+        "sha256": "4ed625c6bfb1193d20d5b79873ed1d52715b45b14cb3344518a2e336c21df801",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000d3",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000d3",
+        "size": 115151,
+        "sha256": "6bf18e006f20dd6a7b2185413f002eda7e5365b32cf3179d8a955f4fd01506cd",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000d4",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000d4",
+        "size": 52717,
+        "sha256": "daf7759fedd9af6c4d7e374b0d056547ae7cb245ec24a1c4acf02932f30dc536",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000d5",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000d5",
+        "size": 25960,
+        "sha256": "6d8eccc795738ed3f5645bb79c90198c0b9536aa265ce7a1ec137f6c07b88aa5",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000d6",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000d6",
+        "size": 563713,
+        "sha256": "b5a4bbb5d3d9a343d09c06f5b3a76d2cc914893351c830ac4c7d060919e3355b",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000d7",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000d7",
+        "size": 62254,
+        "sha256": "d9b0ad66a0fa9579cc004eb3a4e3da00f6040cfb5feaf47f1421cca85d36720c",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000d8",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000d8",
+        "size": 34656,
+        "sha256": "6a2e194f895d8b7c3ac0c9438e793e5a6405fb116e65a3faaf6e7d142b09171d",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000d9",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000d9",
+        "size": 19985,
+        "sha256": "bce21fb5ff8752855f7280d8b85309a368bcf7f5b43f1502fdc0645be33b197a",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000da",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000da",
+        "size": 750162,
+        "sha256": "b21c06140a1c318e7c364ca20b73e16f7ed38cd7a5861fb6603526a8839e7382",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000db",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000db",
+        "size": 502185,
+        "sha256": "968c162618459b7822fff83b3fcc4d6eae1ca203c35b2208384737442e650bce",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000dc",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000dc",
+        "size": 366056,
+        "sha256": "db0fec9ea4618c37d8c0db3cb6e8b109fb0eea8628123f6402d69380a81c9820",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000dd",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000dd",
+        "size": 251292,
+        "sha256": "e89dc2d0eec766851bfe5808510f892e03a09218ac9d316d2b5c4255803f28c5",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000de",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000de",
+        "size": 21716,
+        "sha256": "a5dc7d7304ee9f3d12c623369bca5c3fc4fea1b893095b9b00ea26850748a687",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000df",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000df",
+        "size": 19929,
+        "sha256": "03e6c0123c196d94e4223a49543c9cc6c2a6f0d973ce7b395ffb0ab782c810c9",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000e0",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000e0",
+        "size": 41994,
+        "sha256": "cf09c04da216a0f6b166a9a93dc97954c0d4044247dd1bc1d385dea10f6ec528",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000e1",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000e1",
+        "size": 22092,
+        "sha256": "40125799b74ee732d0ee7b510c0365dba525089962d4e1373a72c72f587d8157",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000e2",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000e2",
+        "size": 18734,
+        "sha256": "1a91ea4388320278a340c8d612ef033ec98c9acd09d4639191a2239d738c4dc6",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000e3",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000e3",
+        "size": 37722,
+        "sha256": "69852821d47808cfedeedf04943a8b66d67e5bdcec60008eebf2644a7064f812",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000e4",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000e4",
+        "size": 88838,
+        "sha256": "fb8a46b04b37278b0eddb76aab69915bfc851a661d5338006be479f1ddf36f13",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000e5",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000e5",
+        "size": 107646,
+        "sha256": "52fa3021148c43b4e24d7acbf1942f98203c5744ac936abc3d96ec5ef3418e6a",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000e6",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000e6",
+        "size": 107644,
+        "sha256": "d42da043464dc7aa4a1c1781bd316d99a0d9a0d75541b3e08344884415ddf23f",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000e7",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000e7",
+        "size": 29175,
+        "sha256": "89ee8fa6201039cfd28f51d61aaad5f005533d192806bc3a8faad9d42397d849",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000e8",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000e8",
+        "size": 19152,
+        "sha256": "9383769fbe74463da1c5cffa5a20df84be43f6dc40f8dbdda81f4dedff825b53",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000e9",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000e9",
+        "size": 81045,
+        "sha256": "5b3ddd79797fdcdd74fc03e01710c40972091001bf490cc667cd41cc9cfb4474",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000ea",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000ea",
+        "size": 189209,
+        "sha256": "3385dfc2d2082fae48d0771649fbbc0007b894a9411b383c8c95c146c4b5824c",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000eb",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000eb",
+        "size": 34121,
+        "sha256": "6f60f5213e739381469d54812156f8357d008c4e2c9a94c4ab9b50391195807c",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000ec",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000ec",
+        "size": 100483,
+        "sha256": "d412d4fa4cdf16b6538e5f80af7409daf9c174d080ffa50d660faf285bf19ed6",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000ed",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000ed",
+        "size": 368477,
+        "sha256": "a96af64465ac048e028bea1645c8d5a6eadbc89f81f30f950972cfddbf255748",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000ee",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000ee",
+        "size": 337196,
+        "sha256": "3bd21eb20d1a5098b7321250657d1a3dae03f459955a5564b9f5687db69c6a05",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000ef",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000ef",
+        "size": 194573,
+        "sha256": "db533d26bad3100aa169c85ec7d770ef86e7835f600befe80c3b7facdbce6259",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000f0",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000f0",
+        "size": 156895,
+        "sha256": "592825b68de333c41e2de821b621098f8935317fed1fcd0ce69a8c0081d1db57",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000f1",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000f1",
+        "size": 248702,
+        "sha256": "30b23d23f7812ad78e74d66a57fd2bec655b1c0ca7a822641479e5f92cf2d97a",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000f2",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000f2",
+        "size": 522012,
+        "sha256": "9ff5bc125144b9471a7d9cd33e6e8e944b4ff0813bcc7f1ecc7a5b3045779941",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000f3",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000f3",
+        "size": 84444,
+        "sha256": "38414fa7d0790a343d53c5a2d5eb0c3097b4718f441b020644b356340812508e",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000f4",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000f4",
+        "size": 26011,
+        "sha256": "e6c01a908a93c666ec9e05b52eeafff0a4981d0b88ce1aa38eb0e3ba92e89a58",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000f5",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000f5",
+        "size": 66603,
+        "sha256": "66a3d69c79e8438d3e3037f5bceb89637487070b9f9b413aabf2fa8c0892fe36",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000f6",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000f6",
+        "size": 86791,
+        "sha256": "3d128bf8b5e86e961db3c6a06e8ea4b73c366f719905471e79329847ed0097e7",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000f7",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000f7",
+        "size": 116250,
+        "sha256": "e60a284a951e67428300738cc0e752fbc12d4521d159ebcce47cb9c02c27895b",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000f8",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000f8",
+        "size": 40086,
+        "sha256": "977826cbce32a38c577c1bb024497f1a2c4c729adf1fee17f1c38d55aead1c11",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000f9",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000f9",
+        "size": 110631,
+        "sha256": "27e310f687c797e6e8ac6c0015c01f37e958e5cab34b8ed5e5bdb689afc352e2",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000fa",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000fa",
+        "size": 547555,
+        "sha256": "4d08fa67251f3eb80688db005f05449f9767d31f4fcb66dfe8ee91f3e116465f",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000fb",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000fb",
+        "size": 22395,
+        "sha256": "beaee2ff7949d28fd70b6e82900a9ad77a7b909ff8d7d281efd8b5b853e0b631",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000fc",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000fc",
+        "size": 63334,
+        "sha256": "6e882be1303130da6f6c80f01129ef32cf580ed8ce1fd4068bd337e519f3f13e",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000fd",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000fd",
+        "size": 48909,
+        "sha256": "68603e6eed6bb4de3d937d114cc2274a3111d3ae46f33982278ad349856fbfe0",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000fe",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000fe",
+        "size": 190619,
+        "sha256": "31ffafb8189486cbf4a124b70443f3360314bc4a5e0f618bb6b1a6ca5a7dc9d1",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_0000ff",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_0000ff",
+        "size": 191064,
+        "sha256": "8aad32c795af8b6087c99f2fcf48850ab2cf1c7009a8c5ff91cd56316ceb3407",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000100",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000100",
+        "size": 187830,
+        "sha256": "c85abb6faf91dbd2d87fb4350f4a02f936857af0d8af420872d6057fd864dcae",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000101",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000101",
+        "size": 190580,
+        "sha256": "cb676f7ef1edbf28d4b9ccd0796df2d3dd4e1785b039c9f8db72149d73739bb2",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000102",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000102",
+        "size": 190781,
+        "sha256": "bc40cd70e2dc20852b0da864e22da77f9b8d0ec591257fe3b998ee5084a6de53",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000103",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000103",
+        "size": 450829,
+        "sha256": "0656b4c9d472792c11769b825813e99534b2b730e30f6be96201bf17062a45e0",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000104",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000104",
+        "size": 51111,
+        "sha256": "e4f59bd9ce28715d8ed8b5b6c8417074076725cf8f0581e989bd5152bfde345f",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000105",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000105",
+        "size": 351831,
+        "sha256": "f55a2c13278175b4e09330afcb0b0eba7744956c949427e949e73c0ab2d13ad5",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000106",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000106",
+        "size": 55290,
+        "sha256": "babffb5f618afd641a674caf76f4b09ecafe4561edefc0e6b08582fd145e0c3f",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000107",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000107",
+        "size": 142122,
+        "sha256": "21a6be044061aae5a5e96fcb875a4855dc053c2a54dc1dcc1201909174f7710d",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000108",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000108",
+        "size": 81267,
+        "sha256": "303834c9acef3192991f015b4d8538acfe5e15ff453024120ca6082d552f0e96",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_000109",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_000109",
+        "size": 74786,
+        "sha256": "91e722095ef7d61b64964a6e022416fce1a512828b253845018c0205b5ed2b91",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00010a",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00010a",
+        "size": 44546,
+        "sha256": "396b14ba433ecd2715a7af17f03e7f5bf4f8bb77b8ed22d083e36b6347a5aa5d",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00010b",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00010b",
+        "size": 269261,
+        "sha256": "df6f035d04877874ad5104f8959734ee8450958906923fa4bd6d96dbc645ad2d",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\f_00010c",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\f_00010c",
+        "size": 1845912,
+        "sha256": "e45cc9fbf38b1e5f6dea2023866778f4f634864b3c578997ce0c0cd387d86e33",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      },
+      {
+        "schema_version": "1.0.0",
+        "layer": "browser_artifacts",
+        "source_path": "C:\\PrZMA\\profiles\\A1\\chrome\\Default\\Cache\\Cache_Data\\index",
+        "stored_path": "snapshots_staging\\PrZMA_ChromeCacheView_URL_snap_adedccadaff848758614629ecfb05218\\artifacts\\browser_artifacts\\chromium.cache.cache_data\\index",
+        "size": 524656,
+        "sha256": "74e56dd49a92b0a911785e69d21ecf03a86d985fffebfc1e1e05402fc1159a3d",
+        "meta": {
+          "artifact_key": "chromium.cache.cache_data"
+        }
+      }
+    ],
+    "summary": {
+      "artifact_count": 273,
+      "total_bytes": 52041093,
+      "zip_sha256": "72fa21cd6fc58c7ff8fa9a19a65a363cfb1380e9358674af06256a8cc092946a"
+    },
+    "environment": {},
+    "repro": {},
+    "notes": ""
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "time_trigger": {
+    "enabled": false,
+    "interval": "00:10",
+    "cooldown_sec": 0
+  },
+  "event_trigger": {
+    "enabled": true,
+    "on_actions": [
+      "browser.close"
+    ],
+    "cooldown_sec": 0,
+    "conditions": [
+      {
+        "left": "agent_id",
+        "op": "eq",
+        "right": "A1"
+      }
+    ]
+  },
+  "collection_plan": {
+    "agent_id": "A1",
+    "artifacts": [
+      "chromium.cache.cache_data"
+    ],
+    "limits": {
+      "max_file_mb": 400,
+      "max_total_mb": 2048
+    },
+    "options": {
+      "browser": "chrome",
+      "profile": "Default"
+    }
+  }
+}

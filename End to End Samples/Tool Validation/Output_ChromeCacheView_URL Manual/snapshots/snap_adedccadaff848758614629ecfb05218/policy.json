@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "PrZMA_ChromeCacheView_URL",
+  "snapshot_id": "snap_adedccadaff848758614629ecfb05218",
+  "agent_id": "A1",
+  "trigger": {
+    "schema_version": "1.0.0",
+    "type": "event",
+    "reason": "event:browser.close",
+    "action_id": null,
+    "action_name": "browser.close",
+    "agent_id": "A1",
+    "scheduled_at": null,
+    "meta": {
+      "rules_path": "interpreter_out\\PrZMA_ChromeCacheView_URL\\tmi_rules.json",
+      "catalog_path": "Snapshot_Engine\\artifact_catalog.json"
+    }
+  },
+  "layers": [
+    "browser_artifacts"
+  ],
+  "layer_policies": {
+    "browser_artifacts": {
+      "schema_version": "1.0.0",
+      "enabled": true,
+      "include_paths": [
+        "chromium.cache.cache_data||{CHROME_ROOT}\\\\Default\\\\Cache\\\\Cache_Data"
+      ],
+      "exclude_paths": [],
+      "include_globs": [],
+      "exclude_globs": [],
+      "max_file_mb": 400,
+      "max_total_mb": 2048,
+      "meta": {
+        "resolved_from": "artifact_catalog",
+        "browser": "chrome",
+        "profile": "Default"
+      }
+    }
+  },
+  "platform": null,
+  "ts": "2026-02-01T11:43:24.025898+00:00"
+}

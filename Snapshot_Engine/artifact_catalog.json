@@ -1,0 +1,480 @@
+{
+  "schema_version": "1.0.0",
+  "catalog_name": "PrZMA Artifact Catalog (Windows + Chromium Web Apps)",
+  "placeholders": {
+    "{USERPROFILE}": "C:\\Users\\<User>",
+    "{LOCALAPPDATA}": "C:\\Users\\<User>\\AppData\\Local",
+    "{APPDATA}": "C:\\Users\\<User>\\AppData\\Roaming",
+    "{WINDIR}": "C:\\Windows",
+    "{SYSTEMDRIVE}": "C:",
+    "{PROFILE}": "Default (or Profile 1, ...)",
+    "{CHROME_ROOT}": "{LOCALAPPDATA}\\\\Google\\\\Chrome\\\\User Data",
+    "{EDGE_ROOT}": "{LOCALAPPDATA}\\\\Microsoft\\\\Edge\\\\User Data"
+  },
+  "platforms": {
+    "windows": {
+      "chromium.profile.core": {
+        "layer": "browser_artifacts",
+        "description": "Core Chromium profile files (history/cookies/prefs/login data)",
+        "paths": [
+          "{CHROME_ROOT}\\\\{PROFILE}\\\\History",
+          "{CHROME_ROOT}\\\\{PROFILE}\\\\History-journal",
+          "{CHROME_ROOT}\\\\{PROFILE}\\\\Cookies",
+          "{CHROME_ROOT}\\\\{PROFILE}\\\\Cookies-journal",
+          "{CHROME_ROOT}\\\\{PROFILE}\\\\Login Data",
+          "{CHROME_ROOT}\\\\{PROFILE}\\\\Login Data-journal",
+          "{CHROME_ROOT}\\\\{PROFILE}\\\\Preferences",
+          "{CHROME_ROOT}\\\\{PROFILE}\\\\Secure Preferences",
+          "{CHROME_ROOT}\\\\{PROFILE}\\\\Bookmarks",
+          "{CHROME_ROOT}\\\\{PROFILE}\\\\Top Sites",
+          "{CHROME_ROOT}\\\\{PROFILE}\\\\Web Data",
+          "{CHROME_ROOT}\\\\{PROFILE}\\\\Web Data-journal"
+        ],
+        "meta": { "browser": "chrome", "notes": "Edge equivalents exist (see edge.* keys)" }
+      },
+
+      "edge.profile.core": {
+        "layer": "browser_artifacts",
+        "description": "Core Edge (Chromium) profile files",
+        "paths": [
+          "{EDGE_ROOT}\\\\{PROFILE}\\\\History",
+          "{EDGE_ROOT}\\\\{PROFILE}\\\\History-journal",
+          "{EDGE_ROOT}\\\\{PROFILE}\\\\Cookies",
+          "{EDGE_ROOT}\\\\{PROFILE}\\\\Cookies-journal",
+          "{EDGE_ROOT}\\\\{PROFILE}\\\\Login Data",
+          "{EDGE_ROOT}\\\\{PROFILE}\\\\Login Data-journal",
+          "{EDGE_ROOT}\\\\{PROFILE}\\\\Preferences",
+          "{EDGE_ROOT}\\\\{PROFILE}\\\\Secure Preferences",
+          "{EDGE_ROOT}\\\\{PROFILE}\\\\Bookmarks",
+          "{EDGE_ROOT}\\\\{PROFILE}\\\\Top Sites",
+          "{EDGE_ROOT}\\\\{PROFILE}\\\\Web Data",
+          "{EDGE_ROOT}\\\\{PROFILE}\\\\Web Data-journal"
+        ],
+        "meta": { "browser": "edge" }
+      },
+
+      "chromium.storage.indexeddb": {
+        "layer": "browser_artifacts",
+        "description": "IndexedDB directory (Chrome profile)",
+        "paths": [
+          "{CHROME_ROOT}\\\\{PROFILE}\\\\IndexedDB"
+        ],
+        "meta": { "browser": "chrome" }
+      },
+
+      "edge.storage.indexeddb": {
+        "layer": "browser_artifacts",
+        "description": "IndexedDB directory (Edge profile)",
+        "paths": [
+          "{EDGE_ROOT}\\\\{PROFILE}\\\\IndexedDB"
+        ],
+        "meta": { "browser": "edge" }
+      },
+
+      "chromium.storage.localstorage": {
+        "layer": "browser_artifacts",
+        "description": "Local Storage directory (Chrome profile)",
+        "paths": [
+          "{CHROME_ROOT}\\\\{PROFILE}\\\\Local Storage"
+        ],
+        "meta": { "browser": "chrome" }
+      },
+
+      "edge.storage.localstorage": {
+        "layer": "browser_artifacts",
+        "description": "Local Storage directory (Edge profile)",
+        "paths": [
+          "{EDGE_ROOT}\\\\{PROFILE}\\\\Local Storage"
+        ],
+        "meta": { "browser": "edge" }
+      },
+
+      "chromium.storage.sessionstorage": {
+        "layer": "browser_artifacts",
+        "description": "Session Storage directory (Chrome profile)",
+        "paths": [
+          "{CHROME_ROOT}\\\\{PROFILE}\\\\Session Storage"
+        ],
+        "meta": { "browser": "chrome" }
+      },
+
+      "edge.storage.sessionstorage": {
+        "layer": "browser_artifacts",
+        "description": "Session Storage directory (Edge profile)",
+        "paths": [
+          "{EDGE_ROOT}\\\\{PROFILE}\\\\Session Storage"
+        ],
+        "meta": { "browser": "edge" }
+      },
+
+      "chromium.cache.cache_data": {
+        "layer": "browser_artifacts",
+        "description": "Cache_Data (Chrome profile cache)",
+        "paths": [
+          "{CHROME_ROOT}\\\\{PROFILE}\\\\Cache\\\\Cache_Data"
+        ],
+        "meta": { "browser": "chrome" }
+      },
+
+      "chromium.storage.cachestorage": {
+        "layer": "browser_artifacts",
+        "description": "CacheStorage directory (Chrome profile)",
+        "paths": [
+          "{CHROME_ROOT}\\\\{PROFILE}\\\\CacheStorage"
+        ],
+        "meta": { "browser": "chrome" }
+      },
+
+      "edge.storage.cachestorage": {
+        "layer": "browser_artifacts",
+        "description": "CacheStorage directory (Edge profile)",
+        "paths": [
+          "{EDGE_ROOT}\\\\{PROFILE}\\\\CacheStorage"
+        ],
+        "meta": { "browser": "edge" }
+      },
+
+      "chromium.service_worker": {
+        "layer": "browser_artifacts",
+        "description": "Service Worker storage (Chrome profile)",
+        "paths": [
+          "{CHROME_ROOT}\\\\{PROFILE}\\\\Service Worker"
+        ],
+        "meta": { "browser": "chrome" }
+      },
+
+      "edge.service_worker": {
+        "layer": "browser_artifacts",
+        "description": "Service Worker storage (Edge profile)",
+        "paths": [
+          "{EDGE_ROOT}\\\\{PROFILE}\\\\Service Worker"
+        ],
+        "meta": { "browser": "edge" }
+      },
+
+      "chromium.code_cache": {
+        "layer": "browser_artifacts",
+        "description": "Code Cache (JS bytecode cache) (Chrome profile)",
+        "paths": [
+          "{CHROME_ROOT}\\\\{PROFILE}\\\\Code Cache"
+        ],
+        "meta": { "browser": "chrome" }
+      },
+
+      "edge.code_cache": {
+        "layer": "browser_artifacts",
+        "description": "Code Cache (Edge profile)",
+        "paths": [
+          "{EDGE_ROOT}\\\\{PROFILE}\\\\Code Cache"
+        ],
+        "meta": { "browser": "edge" }
+      },
+
+      "edge.cache.cache_data": {
+        "layer": "browser_artifacts",
+        "description": "Cache_Data (Edge profile cache)",
+        "paths": [
+          "{EDGE_ROOT}\\\\{PROFILE}\\\\Cache\\\\Cache_Data"
+        ],
+        "meta": { "browser": "edge" }
+      },
+
+      "chromium.network": {
+        "layer": "browser_artifacts",
+        "description": "Network-related Chromium data (Chrome profile)",
+        "paths": [
+          "{CHROME_ROOT}\\\\{PROFILE}\\\\Network",
+          "{CHROME_ROOT}\\\\{PROFILE}\\\\TransportSecurity",
+          "{CHROME_ROOT}\\\\{PROFILE}\\\\Reporting and NEL",
+          "{CHROME_ROOT}\\\\{PROFILE}\\\\Visited Links"
+        ],
+        "meta": { "browser": "chrome" }
+      },
+
+      "edge.network": {
+        "layer": "browser_artifacts",
+        "description": "Network-related Chromium data (Edge profile)",
+        "paths": [
+          "{EDGE_ROOT}\\\\{PROFILE}\\\\Network",
+          "{EDGE_ROOT}\\\\{PROFILE}\\\\TransportSecurity",
+          "{EDGE_ROOT}\\\\{PROFILE}\\\\Reporting and NEL",
+          "{EDGE_ROOT}\\\\{PROFILE}\\\\Visited Links"
+        ],
+        "meta": { "browser": "edge" }
+      },
+
+      "chromium.downloads": {
+        "layer": "browser_artifacts",
+        "description": "Downloads DB and download-related metadata (Chrome profile)",
+        "paths": [
+          "{CHROME_ROOT}\\\\{PROFILE}\\\\History",
+          "{CHROME_ROOT}\\\\{PROFILE}\\\\History-journal"
+        ],
+        "meta": { "browser": "chrome", "notes": "Downloads are in History DB tables; file content is in user Downloads folder" }
+      },
+
+      "user.downloads.folder": {
+        "layer": "system_artifacts",
+        "description": "User Downloads folder (downloaded files themselves)",
+        "paths": [
+          "{USERPROFILE}\\\\Downloads"
+        ],
+        "meta": { "notes": "May be large; consider limits in rules" }
+      },
+
+      "webapp.discord.chromium.storage": {
+        "layer": "cloud_reflected",
+        "description": "Discord Web local manifestations inside Chromium profile (storage areas used by discord.com). Filtering by origin is handled in later extraction stage.",
+        "paths": [
+          "{CHROME_ROOT}\\\\{PROFILE}\\\\IndexedDB",
+          "{CHROME_ROOT}\\\\{PROFILE}\\\\Local Storage",
+          "{CHROME_ROOT}\\\\{PROFILE}\\\\Session Storage",
+          "{CHROME_ROOT}\\\\{PROFILE}\\\\Service Worker",
+          "{CHROME_ROOT}\\\\{PROFILE}\\\\CacheStorage",
+          "{CHROME_ROOT}\\\\{PROFILE}\\\\Code Cache"
+        ],
+        "meta": { "app": "discord_web", "browser": "chrome", "scope": "origin_filter_later" }
+      },
+
+      "webapp.discord.edge.storage": {
+        "layer": "cloud_reflected",
+        "description": "Discord Web local manifestations inside Edge profile",
+        "paths": [
+          "{EDGE_ROOT}\\\\{PROFILE}\\\\IndexedDB",
+          "{EDGE_ROOT}\\\\{PROFILE}\\\\Local Storage",
+          "{EDGE_ROOT}\\\\{PROFILE}\\\\Session Storage",
+          "{EDGE_ROOT}\\\\{PROFILE}\\\\Service Worker",
+          "{EDGE_ROOT}\\\\{PROFILE}\\\\CacheStorage",
+          "{EDGE_ROOT}\\\\{PROFILE}\\\\Code Cache"
+        ],
+        "meta": { "app": "discord_web", "browser": "edge", "scope": "origin_filter_later" }
+      },
+
+      "webapp.telegram.chromium.storage": {
+        "layer": "cloud_reflected",
+        "description": "Telegram Web local manifestations inside Chromium profile (storage areas used by web.telegram.org). Filtering by origin is handled later.",
+        "paths": [
+          "{CHROME_ROOT}\\\\{PROFILE}\\\\IndexedDB",
+          "{CHROME_ROOT}\\\\{PROFILE}\\\\Local Storage",
+          "{CHROME_ROOT}\\\\{PROFILE}\\\\Session Storage",
+          "{CHROME_ROOT}\\\\{PROFILE}\\\\Service Worker",
+          "{CHROME_ROOT}\\\\{PROFILE}\\\\CacheStorage",
+          "{CHROME_ROOT}\\\\{PROFILE}\\\\Code Cache"
+        ],
+        "meta": { "app": "telegram_web", "browser": "chrome", "scope": "origin_filter_later" }
+      },
+
+      "webapp.telegram.edge.storage": {
+        "layer": "cloud_reflected",
+        "description": "Telegram Web local manifestations inside Edge profile",
+        "paths": [
+          "{EDGE_ROOT}\\\\{PROFILE}\\\\IndexedDB",
+          "{EDGE_ROOT}\\\\{PROFILE}\\\\Local Storage",
+          "{EDGE_ROOT}\\\\{PROFILE}\\\\Session Storage",
+          "{EDGE_ROOT}\\\\{PROFILE}\\\\Service Worker",
+          "{EDGE_ROOT}\\\\{PROFILE}\\\\CacheStorage",
+          "{EDGE_ROOT}\\\\{PROFILE}\\\\Code Cache"
+        ],
+        "meta": { "app": "telegram_web", "browser": "edge", "scope": "origin_filter_later" }
+      },
+
+      "system.eventlogs.core": {
+        "layer": "system_artifacts",
+        "description": "Windows Event Logs (EVTX) core set",
+        "paths": [
+          "{WINDIR}\\\\System32\\\\winevt\\\\Logs"
+        ],
+        "meta": { "notes": "Large directory; use max_total_mb in rules" }
+      },
+
+      "system.registry.user_hives": {
+        "layer": "system_artifacts",
+        "description": "Per-user registry hives (NTUSER.DAT, UsrClass.dat)",
+        "paths": [
+          "{USERPROFILE}\\\\NTUSER.DAT",
+          "{USERPROFILE}\\\\AppData\\\\Local\\\\Microsoft\\\\Windows\\\\UsrClass.dat"
+        ],
+        "meta": { "needs_admin": false, "notes": "May be locked while user logged in; copy might fail depending on permissions/locking" }
+      },
+
+      "system.registry.system_hives": {
+        "layer": "system_artifacts",
+        "description": "System registry hives (SAM/SYSTEM/SOFTWARE/SECURITY)",
+        "paths": [
+          "{WINDIR}\\\\System32\\\\config\\\\SAM",
+          "{WINDIR}\\\\System32\\\\config\\\\SYSTEM",
+          "{WINDIR}\\\\System32\\\\config\\\\SOFTWARE",
+          "{WINDIR}\\\\System32\\\\config\\\\SECURITY"
+        ],
+        "meta": { "needs_admin": true, "notes": "Often locked; will require elevated access or volume shadow copy in later version" }
+      },
+
+      "system.prefetch": {
+        "layer": "system_artifacts",
+        "description": "Prefetch files",
+        "paths": [
+          "{WINDIR}\\\\Prefetch"
+        ],
+        "meta": { "needs_admin": true }
+      },
+
+      "system.srum": {
+        "layer": "system_artifacts",
+        "description": "SRUM database (usage/activity telemetry)",
+        "paths": [
+          "{WINDIR}\\\\System32\\\\sru"
+        ],
+        "meta": { "needs_admin": true, "notes": "SRUDB.dat is often locked; later handle via snapshot method (VSS) if needed" }
+      },
+
+      "system.amcache": {
+        "layer": "system_artifacts",
+        "description": "Amcache hive",
+        "paths": [
+          "{WINDIR}\\\\AppCompat\\\\Programs\\\\Amcache.hve"
+        ],
+        "meta": { "needs_admin": true }
+      },
+
+      "system.wer": {
+        "layer": "system_artifacts",
+        "description": "Windows Error Reporting (WER) reports",
+        "paths": [
+          "{PROGRAMDATA}\\\\Microsoft\\\\Windows\\\\WER",
+          "{LOCALAPPDATA}\\\\Microsoft\\\\Windows\\\\WER"
+        ],
+        "meta": { "notes": "PROGRAMDATA placeholder must be resolved by engine if used" }
+      },
+
+      "user.recent.lnk": {
+        "layer": "system_artifacts",
+        "description": "Recent items (LNK) and automatic destinations (Jump Lists)",
+        "paths": [
+          "{APPDATA}\\\\Microsoft\\\\Windows\\\\Recent",
+          "{APPDATA}\\\\Microsoft\\\\Windows\\\\Recent\\\\AutomaticDestinations",
+          "{APPDATA}\\\\Microsoft\\\\Windows\\\\Recent\\\\CustomDestinations"
+        ],
+        "meta": {}
+      },
+
+      "user.shellbags": {
+        "layer": "system_artifacts",
+        "description": "ShellBags-related hives (requires registry hives collection)",
+        "paths": [
+          "{USERPROFILE}\\\\NTUSER.DAT",
+          "{USERPROFILE}\\\\AppData\\\\Local\\\\Microsoft\\\\Windows\\\\UsrClass.dat"
+        ],
+        "meta": { "notes": "ShellBags extracted later from these hives" }
+      },
+
+      "user.userassist": {
+        "layer": "system_artifacts",
+        "description": "UserAssist (requires NTUSER.DAT)",
+        "paths": [
+          "{USERPROFILE}\\\\NTUSER.DAT"
+        ],
+        "meta": { "notes": "Extract later; keep hive as source" }
+      },
+
+      "user.mru.office": {
+        "layer": "system_artifacts",
+        "description": "Office MRU (usually in registry hives)",
+        "paths": [
+          "{USERPROFILE}\\\\NTUSER.DAT"
+        ],
+        "meta": { "notes": "Extract later; keep hive as source" }
+      },
+
+      "memory.pagefile": {
+        "layer": "memory_runtime",
+        "description": "pagefile.sys (if accessible)",
+        "paths": [
+          "{SYSTEMDRIVE}\\\\pagefile.sys"
+        ],
+        "meta": { "needs_admin": true, "likely_locked": true }
+      },
+
+      "memory.hiberfil": {
+        "layer": "memory_runtime",
+        "description": "hiberfil.sys (if present)",
+        "paths": [
+          "{SYSTEMDRIVE}\\\\hiberfil.sys"
+        ],
+        "meta": { "needs_admin": true, "likely_locked": true }
+      },
+
+      "memory.kernel_dump": {
+        "layer": "memory_runtime",
+        "description": "Kernel crash dump (MEMORY.DMP) if generated",
+        "paths": [
+          "{WINDIR}\\\\MEMORY.DMP"
+        ],
+        "meta": { "needs_admin": true, "notes": "Exists only if system has a crash dump" }
+      },
+
+      "app.discord.desktop.leveldb": {
+        "layer": "app_artifacts",
+        "description": "Discord Desktop (Electron) LevelDB/Local Storage (only if Discord Desktop app is used)",
+        "paths": [
+          "{APPDATA}\\\\discord\\\\Local Storage\\\\leveldb",
+          "{APPDATA}\\\\discord\\\\Local Storage",
+          "{APPDATA}\\\\discord\\\\Cache",
+          "{APPDATA}\\\\discord\\\\Code Cache"
+        ],
+        "meta": { "app": "discord_desktop", "notes": "Your current MVP uses Discord Web, but keep for future expansion" }
+      },
+
+      "app.telegram.desktop.data": {
+        "layer": "app_artifacts",
+        "description": "Telegram Desktop tdata (only if Telegram Desktop is used)",
+        "paths": [
+          "{APPDATA}\\\\Telegram Desktop\\\\tdata"
+        ],
+        "meta": { "app": "telegram_desktop", "notes": "Your current MVP uses Telegram Web, but keep for future expansion" }
+      },
+
+      "system.temp": {
+        "layer": "system_artifacts",
+        "description": "Temporary directories (may include transient downloads/cache)",
+        "paths": [
+          "{LOCALAPPDATA}\\\\Temp",
+          "{WINDIR}\\\\Temp"
+        ],
+        "meta": { "notes": "Potentially huge/noisy; typically restrict by rule limits" }
+      },
+
+      "system.tasks": {
+        "layer": "system_artifacts",
+        "description": "Scheduled Tasks (XML definitions)",
+        "paths": [
+          "{WINDIR}\\\\System32\\\\Tasks"
+        ],
+        "meta": { "needs_admin": true }
+      },
+
+      "system.services": {
+        "layer": "system_artifacts",
+        "description": "Service configuration (registry hives needed for full context)",
+        "paths": [
+          "{WINDIR}\\\\System32\\\\config\\\\SYSTEM"
+        ],
+        "meta": { "needs_admin": true }
+      },
+
+      "browser.profile.full_minimal": {
+        "layer": "browser_artifacts",
+        "description": "Minimal but broad Chromium profile directories (good for early-stage snapshots)",
+        "paths": [
+          "{CHROME_ROOT}\\\\{PROFILE}\\\\Network",
+          "{CHROME_ROOT}\\\\{PROFILE}\\\\Service Worker",
+          "{CHROME_ROOT}\\\\{PROFILE}\\\\IndexedDB",
+          "{CHROME_ROOT}\\\\{PROFILE}\\\\Local Storage",
+          "{CHROME_ROOT}\\\\{PROFILE}\\\\Session Storage",
+          "{CHROME_ROOT}\\\\{PROFILE}\\\\CacheStorage",
+          "{CHROME_ROOT}\\\\{PROFILE}\\\\Code Cache"
+        ],
+        "meta": { "browser": "chrome", "notes": "Use this key for simple rules when you don't want to enumerate too many keys." }
+      }
+    }
+  }
+}

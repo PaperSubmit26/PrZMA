@@ -1,0 +1,21 @@
+{
+  "run_id": "PrZMA_Education",
+  "snapshot_id": "snap_d06644ec8e624cb39669de05ede6a937",
+  "agent_id": "A1",
+  "created_at": "2026-02-12T11:04:20.066776+00:00",
+  "trigger": {
+    "schema_version": "1.0.0",
+    "type": "time",
+    "reason": "time_trigger",
+    "action_id": null,
+    "action_name": null,
+    "agent_id": "A1",
+    "scheduled_at": "2026-02-12T10:54:54.464319+00:00",
+    "meta": {
+      "rules_path": "Snapshot_Engine\\rules.json",
+      "catalog_path": "Snapshot_Engine\\artifact_catalog.json"
+    }
+  },
+  "ok": true,
+  "error": null
+}

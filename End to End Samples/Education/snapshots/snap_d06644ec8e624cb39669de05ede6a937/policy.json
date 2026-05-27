@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "PrZMA_Education",
+  "snapshot_id": "snap_d06644ec8e624cb39669de05ede6a937",
+  "agent_id": "A1",
+  "trigger": {
+    "schema_version": "1.0.0",
+    "type": "time",
+    "reason": "time_trigger",
+    "action_id": null,
+    "action_name": null,
+    "agent_id": "A1",
+    "scheduled_at": "2026-02-12T10:54:54.464319+00:00",
+    "meta": {
+      "rules_path": "Snapshot_Engine\\rules.json",
+      "catalog_path": "Snapshot_Engine\\artifact_catalog.json"
+    }
+  },
+  "layers": [
+    "browser_artifacts",
+    "cloud_reflected"
+  ],
+  "layer_policies": {
+    "browser_artifacts": {
+      "schema_version": "1.0.0",
+      "enabled": true,
+      "include_paths": [
+        "chromium.cache.cache_data||{CHROME_ROOT}\\\\Default\\\\Cache\\\\Cache_Data"
+      ],
+      "exclude_paths": [],
+      "include_globs": [],
+      "exclude_globs": [],
+      "max_file_mb": 400,
+      "max_total_mb": 2048,
+      "meta": {
+        "resolved_from": "artifact_catalog",
+        "browser": "chrome",
+        "profile": "Default"
+      }
+    },
+    "cloud_reflected": {
+      "schema_version": "1.0.0",
+      "enabled": true,
+      "include_paths": [
+        "webapp.discord.chromium.storage||{CHROME_ROOT}\\\\Default\\\\IndexedDB",
+        "webapp.discord.chromium.storage||{CHROME_ROOT}\\\\Default\\\\Local Storage",
+        "webapp.discord.chromium.storage||{CHROME_ROOT}\\\\Default\\\\Session Storage",
+        "webapp.discord.chromium.storage||{CHROME_ROOT}\\\\Default\\\\Service Worker",
+        "webapp.discord.chromium.storage||{CHROME_ROOT}\\\\Default\\\\CacheStorage",
+        "webapp.discord.chromium.storage||{CHROME_ROOT}\\\\Default\\\\Code Cache"
+      ],
+      "exclude_paths": [],
+      "include_globs": [],
+      "exclude_globs": [],
+      "max_file_mb": 400,
+      "max_total_mb": 2048,
+      "meta": {
+        "resolved_from": "artifact_catalog",
+        "browser": "chrome",
+        "profile": "Default"
+      }
+    }
+  },
+  "platform": null,
+  "ts": "2026-02-12T10:54:54.466585+00:00"
+}

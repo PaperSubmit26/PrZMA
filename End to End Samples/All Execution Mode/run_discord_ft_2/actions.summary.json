@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "discord_ft_2",
+  "finished_at": "2026-02-14T11:28:30.963257+00:00",
+  "purpose": "tool_testing",
+  "actions_total": 22,
+  "max_actions_total": 100,
+  "minutes_elapsed": 2,
+  "max_minutes": 25,
+  "agent_done": {
+    "A1": true,
+    "A2": true
+  },
+  "stop_reason": "all_agents_done"
+}

@@ -1,0 +1,73 @@
+{
+  "schema_version": "1.0.0",
+  "purpose": "",
+  "run_full_trigger": false,
+  "full_trigger_base_url": null,
+  "agents": {},
+
+  "rendezvous": {
+    "platform": ""
+  },
+
+  "scenario": {
+    "objective": "",
+    "notes": {}
+  },
+
+  "run_limits": {
+    "max_actions_total": 30,
+    "max_minutes": 15
+    },
+
+"global_prompt": {
+    "interaction_style": [],
+    "hard_constraints": [],
+    "completion_criteria": []
+  },
+
+  "vm_boot": {
+    "enabled": true,
+    "provider": "vmware",
+    "gui": true,
+    "vmrun_path": "C:\\Program Files (x86)\\VMware\\VMware Workstation\\vmrun.exe",
+    "vmx_paths": {
+      "A1": "C:\\Users\\...\\VM_Agent1.vmx",
+      "A2": "C:\\Users\\...\\VM_Agent2.vmx",
+      "A3": "C:\\Users\\...\\VM_Agent3.vmx",
+      "A4": "C:\\Users\\...\\VM_Agent4.vmx"
+    },
+    "wait_timeout_sec": 180,
+    "poll_interval_sec": 2.0
+  },
+
+  "discovery": {
+    "rpyc_port": 18861,
+    "subnet": "..."
+  },
+
+  "snapshot": {
+    "time_trigger": {
+      "enabled": false,
+      "interval": "00:10",
+      "cooldown_sec": 0
+    },
+    "event_trigger": {
+      "enabled": false,
+      "on_actions": [],
+      "cooldown_sec": 0,
+      "conditions": []
+    },
+    "collection_plan": {
+      "agent_id": "",
+      "artifacts": [],
+      "limits": {
+        "max_file_mb": 400,
+        "max_total_mb": 2048
+      },
+      "options": {
+        "browser": "chrome",
+        "profile": "Default"
+      }
+    }
+  }
+}

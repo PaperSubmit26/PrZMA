@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-02-01T11:40:39.824593+00:00",
+  "tool": {
+    "name": "ChromeCacheView",
+    "version": "unknown"
+  },
+  "run_id": "PrZMA_ChromeCacheView_URL",
+  "purpose": "tool_testing",
+  "manual_meta": {
+    "source": "url",
+    "url": "https://www.nirsoft.net/utils/chrome_cache_view.html"
+  },
+  "inputs": {
+    "actions_json": "shared\\actions.json",
+    "artifact_catalog_json": "Snapshot_Engine\\artifact_catalog.json",
+    "model": "gpt-5.2"
+  },
+  "outputs": {
+    "tool_plan": "interpreter_out\\PrZMA_ChromeCacheView_URL\\tool_plan.json",
+    "config": "interpreter_out\\PrZMA_ChromeCacheView_URL\\interpreted_przma_config.json",
+    "rules": "interpreter_out\\PrZMA_ChromeCacheView_URL\\tmi_rules.json"
+  },
+  "notes": {
+    "default_agent_id": "A1",
+    "template_config_used": true,
+    "platform_ns_map": {
+      "discord": "discord_web",
+      "telegram": "telegram_web",
+      "slack": "slack_web"
+    }
+  }
+}

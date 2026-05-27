@@ -1,0 +1,40 @@
+{
+  "tool_plan": {
+    "tool": {
+      "name": "ChromeCacheView",
+      "version": "unknown"
+    },
+    "objective": "Read the Google Chrome (and other Chromium-based browsers) cache folder on Windows and display a list of cached files with associated metadata; allow exporting the list and extracting cached files.",
+    "required_actions": [
+      {
+        "name": "browser.launch",
+        "why": "Generate Chromium cache entries that ChromeCacheView can enumerate."
+      },
+      {
+        "name": "browser.goto",
+        "why": "Create cached resources (URLs/content types) in the browser cache for listing/export."
+      },
+      {
+        "name": "browser.close",
+        "why": "Flush/settle cache files on disk so cache_data is stable for parsing and export."
+      }
+    ],
+    "forbidden_actions": [],
+    "required_artifacts": [
+      "chromium.cache.cache_data"
+    ],
+    "trigger_actions": [
+      "browser.close"
+    ],
+    "completion": {
+      "type": "required_artifacts_present",
+      "detail": "Complete when chromium.cache.cache_data is present after browser.close, indicating on-disk Chromium cache data exists for ChromeCacheView to enumerate/export."
+    },
+    "action_intent_guidance": "Action Flow: (1) browser.launch a Chromium-based browser profile that will write to a local cache (default profile is fine). (2) browser.goto a few distinct, stable, publicly reachable pages that natu",
+    "_provenance": {
+      "model": "gpt-5.2",
+      "notes": "3-stage TMI: IR -> bounded mapping -> tool_plan (leaf artifact keys only; with JSON repairs)",
+      "platform": "windows"
+    }
+  }
+}

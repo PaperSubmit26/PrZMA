@@ -1,0 +1,496 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-01-25T00:00:00Z",
+  "description": "PrZMA Action Space. Canonical list of allowed actions for Automation Agent planning and execution, and for tool-testing boundaries.",
+  "namespaces": ["browser", "web", "discord", "telegram"],
+  "actions": [
+    {
+      "name": "browser.launch",
+      "namespace": "browser",
+      "summary": "Launch a browser instance for the given agent_id.",
+      "llm_guidance": [
+        "Use this when no browser session exists yet.",
+        "Pick engine/channel based on przma_config.json."
+      ],
+      "params_schema": {
+        "type": "object",
+          "browser_config": {
+            "type": "object",
+            "properties": {
+              "browser": { "type": "string", "enum": ["chromium"] },
+              "channel": { "type": ["string", "null"], "enum": ["chrome", "msedge", null] },
+              "headless": { "type": "boolean" },
+              "user_data_dir": { "type": ["string", "null"] },
+              "profile_name": { "type": ["string", "null"] },
+              "locale": { "type": ["string", "null"] },
+              "timezone": { "type": ["string", "null"] },
+              "extra_args": { "type": "array", "items": { "type": "string" } }
+            },
+            "required": ["browser"],
+            "additionalProperties": false
+        }
+      },
+      "side_effects": ["opens_browser_process", "creates_browser_profile_artifacts"],
+      "layers_touched": ["application.browser", "system.process"],
+      "artifacts_hint": [
+        "Chrome/Edge profile data (Cache, Cookies, Local Storage, IndexedDB, History)",
+        "OS process traces"
+      ],
+      "safety": { "secrets": "never_log_params" }
+    },
+
+    {
+      "name": "browser.goto",
+      "namespace": "browser",
+      "summary": "Navigate to a URL in the active browser page.",
+      "llm_guidance": [
+        "This commonly triggers snapshot rules (on_action).",
+        "Use a fully qualified URL."
+      ],
+      "params_schema": {
+        "type": "object",
+        "properties": {
+          "url": { "type": "string", "minLength": 1 },
+          "wait": { "type": "string", "enum": ["load","domcontentloaded","networkidle"] },
+          "timeout_ms": { "type": "integer", "minimum": 1000 }
+        },
+        "required": ["url"],
+        "additionalProperties": false
+      },
+      "side_effects": ["network_request", "writes_cache"],
+      "layers_touched": ["application.browser", "cloud_reflected"],
+      "artifacts_hint": ["CacheStorage/Service Worker caches", "HTTP cache entries", "cookies"]
+    },
+    {
+      "name": "browser.get_clickables",
+      "namespace": "browser",
+      "summary": "Enumerate clickable elements on the current page (runtime DOM). Used by full-trigger (tool testing).",
+      "params_schema": {
+        "type": "object",
+        "properties": { "timeout_ms": { "type": "integer" } },
+        "required": [],
+        "additionalProperties": false
+      },
+      "side_effects": ["reads_dom_state"],
+      "layers_touched": ["application.browser"],
+      "artifacts_hint": ["none (runtime only)"]
+    },
+    {
+      "name": "browser.click",
+      "namespace": "browser",
+      "summary": "Click an element by CSS selector. Used by full-trigger or when selector is known.",
+      "params_schema": {
+        "type": "object",
+        "properties": {
+          "selector": { "type": "string", "minLength": 1 },
+          "timeout_ms": { "type": "integer" }
+        },
+        "required": ["selector"],
+        "additionalProperties": false
+      },
+      "side_effects": ["clicks_dom_element", "may_trigger_navigation"],
+      "layers_touched": ["application.browser", "cloud_reflected"]
+    },
+
+    {
+      "name": "browser.smart_click",
+      "namespace": "browser",
+      "summary": "Click a contextually reasonable element (button/link) without providing a selector.",
+      "llm_guidance": [
+        "This behavior may be necessary to generate browser-related artifacts / Scenario. Think about the situation and use it appropriately.",
+        "Use this to create realistic interaction traces without hardcoding selectors.",
+        "Prefer strategy='search_result' right after a search results page is loaded.",
+        "Avoid calling this repeatedly on the same page; combine with goto/scroll to create variety.",
+        "Do NOT use for consent/cookie banners; this action tries to avoid them but is not perfect."
+      ],
+      "params_schema": {
+        "type": "object",
+        "properties": {
+          "strategy": {
+            "type": "string",
+            "enum": ["primary", "search_result", "link"],
+            "default": "primary"
+          },
+          "prefer_text_keywords": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "avoid_text_keywords": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "randomize": {
+            "type": "boolean",
+            "default": true
+          },
+          "timeout_ms": {
+            "type": "integer",
+            "minimum": 1000,
+            "default": 15000
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "side_effects": ["clicks_dom_element", "may_trigger_navigation", "writes_cache"],
+      "layers_touched": ["application.browser", "cloud_reflected"],
+      "artifacts_hint": [
+        "Additional HTTP cache entries",
+        "Service Worker / CacheStorage growth",
+        "Navigation-related history entries (depending on click target)"
+      ]
+    },
+    {
+      "name": "browser.smart_type",
+      "namespace": "browser",
+      "summary": "Type into a contextually reasonable input field (e.g., search box) without providing a selector.",
+      "llm_guidance": [
+        "This behavior may be necessary to generate browser-related artifacts / Scenario. Think about the situation and use it appropriately.",
+        "Use intent='search' to target a likely search box and optionally press Enter.",
+        "You Must Use browser.smart_click after you smart_type",
+        "Provide a short, realistic query string.",
+        "Avoid sensitive strings (credentials, tokens, secrets)."
+      ],
+      "params_schema": {
+        "type": "object",
+        "properties": {
+          "text": { "type": "string", "minLength": 1, "maxLength": 200 },
+          "intent": {
+            "type": "string",
+            "enum": ["search", "generic"],
+            "default": "search"
+          },
+          "press_enter": { "type": ["boolean", "null"] },
+          "clear": { "type": "boolean", "default": true },
+          "timeout_ms": {
+            "type": "integer",
+            "minimum": 1000,
+            "default": 15000
+          }
+        },
+        "required": ["text"],
+        "additionalProperties": false
+      },
+      "side_effects": ["types_keyboard_input", "may_trigger_search_or_form_submit", "writes_cache"],
+      "layers_touched": ["application.browser", "cloud_reflected"],
+      "artifacts_hint": [
+        "Search/query related network requests",
+        "Cache growth from result pages/resources",
+        "Potential history entries and suggestion cache updates"
+      ],
+      "safety": { "secrets": "never_log_params" }
+    },
+
+    {
+      "name": "browser.scroll",
+      "namespace": "browser",
+      "summary": "Scroll the page by a given amount or direction.",
+      "llm_guidance": [
+        "This behavior may be necessary to generate browser-related artifacts / Scenario. Think about the situation and use it appropriately.",
+        "Use to navigate through long pages to trigger lazy-loading or view more content.",
+        "Choose direction based on page layout and artifact generation goals."
+      ],
+      "params_schema": {
+        "type": "object",
+        "properties": {
+          "direction": { 
+            "type": "string", 
+            "enum": ["up", "down", "left", "right", "top", "bottom"] 
+          },
+          "pixels": { "type": ["integer", "null"] },
+          "selector": { "type": ["string", "null"] }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "side_effects": ["changes_viewport"],
+      "layers_touched": ["application.browser"],
+      "artifacts_hint": ["Lazy-loaded content in cache", "Additional network requests for dynamically loaded resources"]
+    },
+
+    {
+      "name": "browser.screenshot",
+      "namespace": "browser",
+      "summary": "Take a screenshot of the current page.",
+      "params_schema": {
+        "type": "object",
+        "properties": {
+          "path": { "type": ["string", "null"] }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "side_effects": ["writes_file"],
+      "layers_touched": ["application.browser", "system.files"],
+      "artifacts_hint": ["screenshot file on VM"]
+    },
+
+    {
+      "name": "browser.close",
+      "namespace": "browser",
+      "summary": "Close browser session for agent_id.",
+      "params_schema": { "type": "object", "properties": {}, "required": [], "additionalProperties": false },
+      "side_effects": ["terminates_browser_process"],
+      "layers_touched": ["system.process"]
+    },
+
+    {
+      "name": "discord.login",
+      "namespace": "discord",
+      "summary": "Login to Discord Web for the agent.",
+      "llm_guidance": [
+        "Only do this when login_required is true and not logged_in yet.",
+        "Credentials must be resolved via .env by Host and passed securely."
+      ],
+      "params_schema": {
+        "type": "object",
+        "properties": {
+          "email": { "type": "string" },
+          "password": { "type": "string" }
+        },
+        "required": ["email", "password"],
+        "additionalProperties": false
+      },
+      "side_effects": ["auth_session_created", "writes_cookies_localstorage"],
+      "layers_touched": ["application.browser", "application.discord", "cloud_reflected"],
+      "artifacts_hint": ["Discord auth cookies", "LocalStorage/IndexedDB tokens (web)"],
+      "safety": { "secrets": "never_log_params" }
+    },
+
+    {
+    "name": "discord.goto_channel",
+    "namespace": "discord",
+    "summary": "Open a specific Discord channel URL in Discord Web.",
+    "llm_guidance": [
+        "Use the rendezvous channel URL from .env (e.g., DISCORD_MEETING_CHANNEL).",
+        "Pass it via params.url."
+    ],
+    "params_schema": {
+        "type": "object",
+        "properties": {
+        "channel_url": { "type": "string", "minLength": 1 }
+        },
+        "required": ["channel_url"],
+        "additionalProperties": false
+    }
+    },
+
+
+    {
+    "name": "discord.get_latest_messages",
+    "namespace": "discord",
+    "summary": "Fetch recent visible messages from the currently opened Discord channel UI.",
+    "llm_guidance": [
+        "Use this to monitor the conversation and decide the next action in real time.",
+        "Call before sending a reply, especially for A2.",
+        "Do not assume the other agent has already spoken—verify by reading messages."
+    ],
+    "params_schema": {
+        "type": "object",
+        "properties": {
+        "limit": { "type": "integer", "minimum": 1, "maximum": 50 },
+        "timeout_ms": { "type": "integer" }
+        },
+        "required": [],
+        "additionalProperties": false
+    },
+    "side_effects": ["reads_dom_state"],
+    "layers_touched": ["application.discord", "application.browser"],
+    "artifacts_hint": ["none (runtime UI read)"]
+    },
+
+    {
+      "name": "discord.send_message",
+      "namespace": "discord",
+      "summary": "Send a message to the currently opened Discord channel.",
+      "llm_guidance": [
+        "Keep it short and meeting-oriented as per scenario.",
+        "Avoid secrets, credentials, API keys."
+      ],
+      "params_schema": {
+        "type": "object",
+        "properties": {
+          "text": { "type": "string", "minLength": 1, "maxLength": 5000 }
+        },
+        "required": ["text"],
+        "additionalProperties": false
+      },
+      "side_effects": ["creates_cloud_message", "writes_local_artifacts"],
+      "layers_touched": ["cloud_reflected", "application.discord", "application.browser"],
+      "artifacts_hint": ["Cache entries, IndexedDB updates, message-related network logs"]
+    },
+    
+    {
+      "name": "discord.upload_file",
+      "namespace": "discord",
+      "summary": "Upload a file in the currently opened Discord channel, optionally sending a message.",
+      "llm_guidance": [
+        "Use this when the scenario requires file exchange.",
+        "Choose file from the File Catalog (file.json): use file_key (e.g. 'artifact', 'dog', 'club_rule_pdf') or file_path (VM path).",
+        "If you need to describe the file, include params.text.",
+        "Never upload secrets; use only files listed in file.json."
+      ],
+      "params_schema": {
+        "type": "object",
+        "properties": {
+          "file_path": { "type": "string", "minLength": 1 },
+          "file_key": { "type": "string", "description": "Id from file.json; resolved to file_path on Host" },
+          "text": { "type": "string" },
+          "timeout_ms": { "type": "integer" }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "side_effects": ["writes_cloud_message", "writes_local_artifacts"],
+      "layers_touched": ["application.discord", "application.browser", "cloud_reflected"],
+      "artifacts_hint": ["Attachment-related cache/IndexedDB updates", "Network traces"]
+    },
+    {
+      "name": "discord.delete_message",
+      "namespace": "discord",
+      "summary": "Delete a previously sent message.",
+      "llm_guidance": ["Targets the last message by default. Use to remove own message."],
+      "params_schema": {
+        "type": "object",
+        "properties": {
+          "which": { "type": "string", "enum": ["last", "last_n"], "default": "last" },
+          "n": { "type": "integer", "minimum": 1, "default": 1 },
+          "timeout_ms": { "type": "integer" }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "side_effects": ["removes_cloud_message"],
+      "layers_touched": ["application.discord", "cloud_reflected"]
+    },
+    {
+      "name": "discord.reply_message",
+      "namespace": "discord",
+      "summary": "Reply to a specific message.",
+      "llm_guidance": ["Use target 'last' to reply to the most recent message in the channel."],
+      "params_schema": {
+        "type": "object",
+        "properties": {
+          "text": { "type": "string", "minLength": 1, "maxLength": 5000 },
+          "target": { "type": "string", "enum": ["last", "last_other"], "default": "last" },
+          "timeout_ms": { "type": "integer" }
+        },
+        "required": ["text"],
+        "additionalProperties": false
+      },
+      "side_effects": ["creates_cloud_message", "writes_local_artifacts"],
+      "layers_touched": ["cloud_reflected", "application.discord", "application.browser"]
+    },
+    {
+      "name": "discord.react_message",
+      "namespace": "discord",
+      "summary": "Add an emoji reaction to a message.",
+      "llm_guidance": ["Use Unicode emoji (e.g. 👍, ❤️) or name like 'thumbsup'. Targets last message by default."],
+      "params_schema": {
+        "type": "object",
+        "properties": {
+          "emoji": { "type": "string", "minLength": 1 },
+          "emoji_name": { "type": "string" },
+          "target": { "type": "string", "enum": ["last"], "default": "last" },
+          "timeout_ms": { "type": "integer" }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "side_effects": ["updates_cloud_message"],
+      "layers_touched": ["application.discord", "cloud_reflected"]
+    },
+    {
+      "name": "telegram.open",
+      "namespace": "telegram",
+      "summary": "Open Telegram Web and initialize session.",
+      "llm_guidance": ["Call first when using Telegram. Use variant 'k' for web.telegram.org/k/."],
+      "params_schema": {
+        "type": "object",
+        "properties": {
+          "variant": { "type": "string", "enum": ["k", "a"], "default": "k" },
+          "timeout_ms": { "type": "integer" }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "side_effects": ["opens_telegram_web"],
+      "layers_touched": ["application.browser", "application.telegram"]
+    },
+    {
+      "name": "telegram.select_chat",
+      "namespace": "telegram",
+      "summary": "Select a target chat via search.",
+      "llm_guidance": ["Provide chat name or username in params.chat."],
+      "params_schema": {
+        "type": "object",
+        "properties": {
+          "chat": { "type": "string", "minLength": 1 },
+          "variant": { "type": "string", "enum": ["k", "a"] },
+          "timeout_ms": { "type": "integer" }
+        },
+        "required": ["chat"],
+        "additionalProperties": false
+      },
+      "side_effects": ["changes_active_chat"],
+      "layers_touched": ["application.telegram", "application.browser"]
+    },
+    {
+      "name": "telegram.send_message",
+      "namespace": "telegram",
+      "summary": "Send a short message to the active chat.",
+      "llm_guidance": ["Optionally set chat first with telegram.select_chat. Keep messages short."],
+      "params_schema": {
+        "type": "object",
+        "properties": {
+          "text": { "type": "string", "minLength": 1, "maxLength": 4096 },
+          "chat": { "type": "string" },
+          "variant": { "type": "string" },
+          "timeout_ms": { "type": "integer" }
+        },
+        "required": ["text"],
+        "additionalProperties": false
+      },
+      "side_effects": ["creates_cloud_message", "writes_local_artifacts"],
+      "layers_touched": ["application.telegram", "cloud_reflected", "application.browser"]
+    },
+    {
+      "name": "telegram.upload_file",
+      "namespace": "telegram",
+      "summary": "Upload a file to the active chat.",
+      "llm_guidance": [
+        "Choose file from File Catalog (file.json): use file_key or file_path (VM path).",
+        "Optionally include message to send with the file."
+      ],
+      "params_schema": {
+        "type": "object",
+        "properties": {
+          "file_path": { "type": "string", "minLength": 1 },
+          "file_key": { "type": "string" },
+          "message": { "type": "string" },
+          "chat": { "type": "string" },
+          "variant": { "type": "string" },
+          "timeout_ms": { "type": "integer" }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "side_effects": ["writes_cloud_message", "writes_local_artifacts"],
+      "layers_touched": ["application.telegram", "cloud_reflected", "application.browser"]
+    },
+    {
+      "name": "telegram.login",
+      "namespace": "telegram",
+      "summary": "Login to Telegram Web/Desktop (placeholder for future expansion).",
+      "params_schema": {
+        "type": "object",
+        "properties": {
+          "credential_ref": { "type": "string" }
+        },
+        "required": ["credential_ref"],
+        "additionalProperties": true
+      },
+      "status": "planned"
+    }
+  ]
+}

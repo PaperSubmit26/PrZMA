@@ -1,0 +1,98 @@
+[
+  {
+    "name": "tt-data",
+    "version": 1,
+    "objectStores": [
+      "store"
+    ]
+  },
+  {
+    "name": "tweb-account-1",
+    "version": 9,
+    "objectStores": [
+      "chats",
+      "chats__encrypted",
+      "dialogs",
+      "dialogs__encrypted",
+      "messages",
+      "messages__encrypted",
+      "session",
+      "session__encrypted",
+      "stickerSets",
+      "stickerSets__encrypted",
+      "users",
+      "users__encrypted",
+      "webapp",
+      "webapp__encrypted"
+    ]
+  },
+  {
+    "name": "tweb-account-2",
+    "version": 9,
+    "objectStores": [
+      "chats",
+      "chats__encrypted",
+      "dialogs",
+      "dialogs__encrypted",
+      "messages",
+      "messages__encrypted",
+      "session",
+      "session__encrypted",
+      "stickerSets",
+      "stickerSets__encrypted",
+      "users",
+      "users__encrypted",
+      "webapp",
+      "webapp__encrypted"
+    ]
+  },
+  {
+    "name": "tweb-account-3",
+    "version": 9,
+    "objectStores": [
+      "chats",
+      "chats__encrypted",
+      "dialogs",
+      "dialogs__encrypted",
+      "messages",
+      "messages__encrypted",
+      "session",
+      "session__encrypted",
+      "stickerSets",
+      "stickerSets__encrypted",
+      "users",
+      "users__encrypted",
+      "webapp",
+      "webapp__encrypted"
+    ]
+  },
+  {
+    "name": "tweb-account-4",
+    "version": 9,
+    "objectStores": [
+      "chats",
+      "chats__encrypted",
+      "dialogs",
+      "dialogs__encrypted",
+      "messages",
+      "messages__encrypted",
+      "session",
+      "session__encrypted",
+      "stickerSets",
+      "stickerSets__encrypted",
+      "users",
+      "users__encrypted",
+      "webapp",
+      "webapp__encrypted"
+    ]
+  },
+  {
+    "name": "tweb-common",
+    "version": 8,
+    "objectStores": [
+      "localStorage",
+      "localStorage__encrypted",
+      "session"
+    ]
+  }
+]

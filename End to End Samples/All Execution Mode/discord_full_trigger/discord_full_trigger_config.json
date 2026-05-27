@@ -1,0 +1,147 @@
+{
+  "schema_version": "1.0.0",
+  "purpose": "tool_testing",
+  "run_full_trigger": false,
+  "full_trigger_base_url": null,
+  "agents": {
+    "A1": {
+      "display_name": "Agent A1",
+      "persona": {
+        "text": "You are A1 in a Discord full-trigger run. After bootstrap and full-trigger click coverage, trigger each Discord feature ONCE: send ONE message, reply ONCE, add ONE emoji reaction, use @mention ONCE, and upload ONE file (+ button). Do NOT have a long conversation—just trigger each feature once to generate artifacts.",
+        "tone": "",
+        "behavior_rules": [
+          "Trigger each feature once: one message, one reply, one emoji reaction, one @mention, one upload.",
+          "Do NOT repeat actions or have extended conversations.",
+          "Goal is feature coverage, not conversation length."
+        ]
+      },
+      "platforms": {
+        "discord_web": {
+          "enabled": true,
+          "login_required": true,
+          "credential_ref": "DISCORD_A1"
+        }
+      },
+      "browser": {
+        "engine": "chromium",
+        "channel": "chrome"
+      }
+    },
+    "A2": {
+      "display_name": "Agent A2",
+      "persona": {
+        "text": "You are A2 in a Discord full-trigger run. Your ONLY role is to send ONE message if the channel has no messages (to seed the channel for A1). Do NOT do reply, reaction, @mention, upload, or any other actions. After sending the seed message (or if the channel already has messages), return done=true immediately.",
+        "tone": "",
+        "behavior_rules": [
+          "Only send one message when the channel is empty; then return done.",
+          "Do NOT perform reply, reaction, @mention, or upload. A1 does all feature coverage."
+        ]
+      },
+      "platforms": {
+        "discord_web": {
+          "enabled": true,
+          "login_required": true,
+          "credential_ref": "DISCORD_A2"
+        }
+      },
+      "browser": {
+        "engine": "chromium",
+        "channel": "msedge"
+      }
+    }
+  },
+  "rendezvous": {
+    "platform": "discord_web"
+  },
+  "scenario": {
+    "objective": "Discord full-trigger: (1) Bootstrap A1 and A2 to the same Discord channel. (2) A2 sends ONE message only if the channel is empty (seed), then stops. (3) A1 runs full trigger (enumerates and clicks clickables; snapshot per click), then A1 triggers each Discord feature ONCE: one message, reply, reaction, @mention, upload. A2 does not do feature coverage.",
+    "notes": {
+      "mode": "discord_full_trigger_feature_coverage"
+    }
+  },
+  "run_limits": {
+    "max_actions_total": 100,
+    "max_minutes": 25
+  },
+  "global_prompt": {
+    "interaction_style": [
+      "A2: only send one message if channel is empty, then done. A1: full-trigger clicks then feature coverage (one message, reply, reaction, @mention, upload)."
+    ],
+    "hard_constraints": [],
+    "completion_criteria": [
+      {
+        "type": "full_trigger_done",
+        "detail": ""
+      },
+      {
+        "type": "feature_coverage_done",
+        "detail": "A1 has triggered: one message, reply, reaction, @mention, upload. A2 only seeds the channel (one message if empty)."
+      }
+    ]
+  },
+  "vm_boot": {
+    "enabled": true,
+    "provider": "vmware",
+    "gui": true,
+    "vmrun_path": "C:\\Program Files (x86)\\VMware\\VMware Workstation\\vmrun.exe",
+    "vmx_paths": {
+      "A1": "C:\\Users\\user\\Documents\\Virtual Machines\\VM_Agent\\VM_Agent.vmx",
+      "A2": "C:\\Users\\user\\Documents\\Virtual Machines\\Clone of VM_Agent\\Clone of VM_Agent.vmx",
+      "A3": "C:\\Users\\...\\Clone of VM_Agent.vmx",
+      "A4": "C:\\Users\\...\\Clone of VM_Agent.vmx"
+    },
+    "wait_timeout_sec": 180,
+    "poll_interval_sec": 2.0
+  },
+  "discovery": {
+    "rpyc_port": 18861,
+    "subnet": "**This field was manually removed for sample release"
+  },
+  "snapshot": {
+    "time_trigger": {
+      "enabled": false,
+      "interval": "00:10",
+      "cooldown_sec": 0
+    },
+    "event_trigger": {
+      "enabled": true,
+      "on_actions": [
+        "browser.full_trigger_click",
+        "browser.close"
+      ],
+      "cooldown_sec": 0,
+      "conditions": [
+        {
+          "left": "agent_id",
+          "op": "in",
+          "right": [
+            "A1"
+          ]
+        }
+      ]
+    },
+    "collection_plan": {
+      "agent_id": "A1",
+      "artifacts": [
+        "chromium.profile.core",
+        "chromium.storage.indexeddb",
+        "chromium.storage.localstorage",
+        "chromium.cache.cache_data"
+      ],
+      "limits": {
+        "max_file_mb": 400,
+        "max_total_mb": 2048
+      },
+      "options": {
+        "browser": "chrome",
+        "profile": "Default"
+      },
+      "capture_web_state": true
+    }
+  },
+  "target_application": "discord_web",
+  "full_trigger_use_llm": true,
+  "full_trigger_agent": "A1",
+  "full_trigger_max_clicks": 3,
+  "full_trigger_wait_after_click_sec": 0.8
+}

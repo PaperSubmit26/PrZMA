@@ -1,0 +1,151 @@
+{
+  "schema_version": "1.0.0",
+  "description": "PrZMA uploadable file catalog. LLM chooses by description/name; file_path is sent to VM. Place files on each VM at the given path (e.g. C:\\Users\\VM Agent\\VM_Agent\\files\\).",
+  "base_path_vm": "C:\\Users\\VM Agent\\VM_Agent\\files",
+  "files": [
+    {
+      "id": "artifact",
+      "path": "artifact.png",
+      "name": "Artifact.png",
+      "description": "Photo of Windows artifact catalog (used in forensic investigator conversations)",
+      "scenario_hint": "forensic_investigator, artifact_catalog_discussion",
+      "mime": "image/png"
+    },
+    {
+      "id": "dog",
+      "path": "dog.png",
+      "name": "dog.png",
+      "description": "Dog photo (general, pet introduction, etc.)",
+      "scenario_hint": "pet_intro, casual_chat",
+      "mime": "image/png"
+    },
+    {
+      "id": "cat",
+      "path": "cat.png",
+      "name": "cat.png",
+      "description": "Cat photo (general, pet introduction, etc.)",
+      "scenario_hint": "pet_intro, casual_chat",
+      "mime": "image/png"
+    },
+    {
+      "id": "map",
+      "path": "map.png",
+      "name": "map.png",
+      "description": "Map of specific location/place (used for meetup invitations, appointment location guidance)",
+      "scenario_hint": "meetup, location_share",
+      "mime": "image/png"
+    },
+    {
+      "id": "welcome_word",
+      "path": "welcome.word",
+      "name": "welcome.word",
+      "description": "New member registration document (used when new members join in club chatroom scenarios)",
+      "scenario_hint": "club_chat, new_member",
+      "mime": "application/msword"
+    },
+    {
+      "id": "club_rule_pdf",
+      "path": "club_rule.pdf",
+      "name": "club_rule.pdf",
+      "description": "Club rules document (used when introducing rules to new members in club chatrooms)",
+      "scenario_hint": "club_chat, rules_intro",
+      "mime": "application/pdf"
+    },
+    {
+      "id": "meeting_agenda",
+      "path": "meeting_agenda.pdf",
+      "name": "meeting_agenda.pdf",
+      "description": "Meeting agenda PDF (meeting/club scenarios)",
+      "scenario_hint": "club_chat, meeting",
+      "mime": "application/pdf"
+    },
+    {
+      "id": "sample_doc",
+      "path": "sample_doc.pdf",
+      "name": "sample_doc.pdf",
+      "description": "General document PDF (document sharing scenarios)",
+      "scenario_hint": "document_share",
+      "mime": "application/pdf"
+    },
+    {
+      "id": "guide_pdf",
+      "path": "guide.pdf",
+      "name": "guide.pdf",
+      "description": "Guide document PDF",
+      "scenario_hint": "tutorial, guide_share",
+      "mime": "application/pdf"
+    },
+    {
+      "id": "readme_pdf",
+      "path": "readme.pdf",
+      "name": "readme.pdf",
+      "description": "README format PDF",
+      "scenario_hint": "document_share",
+      "mime": "application/pdf"
+    },
+    {
+      "id": "member_list",
+      "path": "member_list.word",
+      "name": "member_list.word",
+      "description": "Member list Word document (club/organization scenarios)",
+      "scenario_hint": "club_chat",
+      "mime": "application/msword"
+    },
+    {
+      "id": "schedule",
+      "path": "schedule.word",
+      "name": "schedule.word",
+      "description": "Schedule Word document",
+      "scenario_hint": "meeting, club_chat",
+      "mime": "application/msword"
+    },
+    {
+      "id": "minutes",
+      "path": "minutes.word",
+      "name": "minutes.word",
+      "description": "Meeting minutes Word document",
+      "scenario_hint": "meeting",
+      "mime": "application/msword"
+    },
+    {
+      "id": "notice",
+      "path": "notice.word",
+      "name": "notice.word",
+      "description": "Announcement Word document",
+      "scenario_hint": "club_chat, announcement",
+      "mime": "application/msword"
+    },
+    {
+      "id": "triage_notes_txt",
+      "path": "forensics\\triage_notes.txt",
+      "name": "triage_notes.txt",
+      "description": "Short triage notes for the Discord investigation (safe demo content).",
+      "scenario_hint": "education, forensics_triage, share_notes",
+      "mime": "text/plain"
+    },
+    {
+      "id": "ioc_list_txt",
+      "path": "forensics\\ioc_list.txt",
+      "name": "ioc_list.txt",
+      "description": "Demo IOC list (domains, URLs, hashes) for sharing in chat (safe placeholders).",
+      "scenario_hint": "education, forensics_triage, ioc_share",
+      "mime": "text/plain"
+    },
+    {
+      "id": "timeline_csv",
+      "path": "forensics\\timeline.csv",
+      "name": "timeline.csv",
+      "description": "Small timeline CSV for the case (timestamps + event descriptions).",
+      "scenario_hint": "education, forensics_triage, timeline_share",
+      "mime": "text/csv"
+    },
+    {
+      "id": "cache_path_cheatsheet_md",
+      "path": "forensics\\cache_path_cheatsheet.md",
+      "name": "cache_path_cheatsheet.md",
+      "description": "Cheatsheet of relevant browser artifact paths and what to extract (demo).",
+      "scenario_hint": "education, forensics_triage, reference_share",
+      "mime": "text/markdown"
+    }
+  ]
+}

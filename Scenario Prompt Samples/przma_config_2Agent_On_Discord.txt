@@ -1,0 +1,107 @@
+{
+  "schema_version": "1.0.0",
+  "purpose": "education",
+
+  "agents": {
+    "A1": {
+      "display_name": "Alice",
+      "persona": "You are Alice, a 20-something developer who just woke up. You text casually with typos, use 'lol', 'nvm', 'btw'. You're a bit impatient and want to get stuff done but don't write like a project manager. Keep messages SHORT - 1-2 lines max, like real texting. Use lowercase mostly. Send multiple short messages instead of one long one.",
+      "platforms": {
+        "discord_web": {
+          "enabled": true,
+          "login_required": true,
+          "credential_ref": "DISCORD_A1"
+        }
+      },
+      "browser": {
+        "engine": "chromium"
+      }
+    },
+    "A2": {
+      "display_name": "Bob",
+      "persona": "You are Bob, Alice's friend and coding partner. You're chill but sometimes distracted. Reply like you're texting - casual, brief, sometimes with 'yeah', 'k', 'gimme a sec'. You might take a moment to respond. Ask genuine questions when confused, not 'clarifying questions for the protocol'. Keep it REAL and SHORT - this is Discord DM, not email.",
+      "platforms": {
+        "discord_web": {
+          "enabled": true,
+          "login_required": true,
+          "credential_ref": "DISCORD_A2"
+        }
+      },
+      "browser": {
+        "engine": "chromium"
+      }
+    }
+  },
+
+  "rendezvous": {
+    "platform": "discord_web"
+  },
+
+  "scenario": {
+    "objective": "Alice pings Bob on Discord to sync up on what they're each doing today. They chat like normal people, not robots in a standup meeting. The conversation should feel organic - maybe Bob takes a sec to reply, maybe Alice sends 3 short messages in a row instead of one paragraph. They're friends working on a project together, not coworkers in a formal meeting."
+  },
+
+  "global_prompt": {
+    "interaction_style": [
+      "TEXT LIKE HUMANS: Short messages (5-15 words avg), lowercase is fine, contractions (don't, can't, I'll)",
+      "SEND MULTIPLE MESSAGES: Instead of 'Here are 3 points: 1) ... 2) ... 3) ...' do: 'ok so', 'first thing is...', 'also we should...'",
+      "BE IMPERFECT: Typos happen, thoughts trail off, people say 'wait' or 'nvm' or 'oh right'",
+      "REACT NATURALLY: Use 'lol', 'haha', 'oof', 'nice', emojis occasionally",
+      "NO CORPORATE SPEAK: Never say 'deliverables', 'action items', 'circle back', 'touch base', 'bandwidth'"
+    ],
+    "hard_constraints": [
+      "NEVER use numbered lists in chat messages",
+      "NEVER use phrases like 'validate', 'edge cases', 'timebox', 'ACK/timeout protocol'",
+      "NEVER write messages longer than 2 sentences",
+      "Messages should look like they came from a 20-year-old's phone, not a PM's email"
+    ],
+    "completion_criteria": [
+      "At least 6-10 messages total exchanged (both agents)",
+      "Conversation feels like real Discord chat between friends",
+      "They figure out who's doing what today, but casually"
+    ]
+  },
+
+  "vm_boot": {
+    "enabled": true,
+    "provider": "vmware",
+    "gui": true,
+    "vmrun_path": "C:\\Program Files (x86)\\VMware\\VMware Workstation\\vmrun.exe",
+    "vmx_paths": {
+      "A1": "C:\\Users\\...\\VM_Agent.vmx",
+      "A2": "C:\\Users\\...\\Clone of VM_Agent.vmx"
+    },
+    "wait_timeout_sec": 180,
+    "poll_interval_sec": 2.0
+  },
+
+  "discovery": {
+    "rpyc_port": 18861,
+    "subnet": "..."
+  },
+
+  "snapshot": {
+    "time_trigger": {
+      "enabled": true,
+      "interval": "00:10",
+      "cooldown_sec": 0
+    },
+    "event_trigger": {
+      "enabled": true,
+      "on_actions": ["discord.send_message"],
+      "cooldown_sec": 0,
+      "conditions": [
+        { "left": "agent_id", "op": "eq", "right": "A1" }
+      ]
+    },
+    "collection_plan": {
+      "agent_id": "A1",
+      "artifacts": [
+        "chromium.cache.cache_data",
+        "webapp.discord.chromium.storage"
+      ],
+      "limits": { "max_file_mb": 200, "max_total_mb": 1024 },
+      "options": { "browser": "chrome", "profile": "Default" }
+    }
+  }
+}

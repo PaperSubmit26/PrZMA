@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "PrZMA_Education",
+  "finished_at": "2026-02-12T10:53:21.533674+00:00",
+  "purpose": "education",
+  "actions_total": 60,
+  "max_actions_total": 60,
+  "minutes_elapsed": 14,
+  "max_minutes": 20,
+  "agent_done": {
+    "A1": false,
+    "A2": false,
+    "A3": false
+  },
+  "stop_reason": "max_actions_total"
+}
