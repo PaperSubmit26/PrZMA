@@ -14,7 +14,9 @@ One VM_Agent instance runs per VM; multiple VMs (e.g. A1, A2) each run their own
 ```
 VM_Agent/
 ├── agent_main.py          # Entry point: RPyC server, PrZMAService
+├── setup.ps1              # Create venv, install dependencies, install Chromium
 ├── init.ps1               # Register scheduled task for startup (run once on VM)
+├── requirements.txt       # VM-side Python dependencies
 ├── vm_agent_config.json   # Optional: host, port, snapshot_root
 ├── shared/
 │   └── wire_schemas.py    # ActionRequest, ActionResult, SnapshotPolicy, SnapshotResult, etc.
@@ -32,12 +34,30 @@ VM_Agent/
 
 Deploy this folder at **`C:\Users\VM Agent\VM_Agent`** on the VM. The Automation Agent and configs (e.g. `przma_config.json`) expect this path for artifact paths and snapshot staging.
 
+## Setup
+
+After copying this folder into the VM, run:
+
+```powershell
+cd "C:\Users\VM Agent\VM_Agent"
+Set-ExecutionPolicy -Scope Process Bypass -Force
+.\setup.ps1
+```
+
+This creates `.venv`, installs VM-side dependencies, installs Playwright Chromium, and creates a default `vm_agent_config.json` if one is not present.
+
+To also register the VM Agent as a startup task:
+
+```powershell
+.\setup.ps1 -RegisterStartup
+```
+
 ## Running
 
-From the VM (with this directory as the working directory, or with `VM_Agent` on `PYTHONPATH`):
+From the VM:
 
 ```bash
-python agent_main.py
+.\.venv\Scripts\python.exe .\agent_main.py
 ```
 
 Default: listens on `0.0.0.0:18861`. Override via `vm_agent_config.json`:
@@ -67,7 +87,7 @@ This registers a Windows scheduled task **PrZMA_VM_Agent** that:
 - Uses the Python in `.venv\Scripts\python.exe` and runs `agent_main.py` with unbuffered output (`-u`).
 - Appends stdout/stderr to `logs\agent_main_startup.log`.
 
-Requirements: VM_Agent deployed at `C:\Users\VM Agent\VM_Agent` and a virtual environment at `C:\Users\VM Agent\VM_Agent\.venv`. To remove the task: `Unregister-ScheduledTask -TaskName PrZMA_VM_Agent`.
+Requirements: VM_Agent deployed at `C:\Users\VM Agent\VM_Agent` and a virtual environment at `C:\Users\VM Agent\VM_Agent\.venv`. The setup script creates this environment. To remove the task: `Unregister-ScheduledTask -TaskName PrZMA_VM_Agent`.
 
 ## Exposed RPC (PrZMAService)
 
@@ -84,8 +104,8 @@ All UI work (Playwright, Discord/Telegram) runs on one thread; RPyC calls are se
 
 - Python 3 (tested on 3.10+)
 - **RPyC** – RPC server used by the host to call into the VM
-- **Playwright** – browser automation (Chromium); install with `playwright install chromium`
-- No separate `requirements.txt` in this folder; use the project’s top-level dependency list if present.
+- **Playwright** – browser automation (Chromium)
+- **python-dotenv** – optional environment loading support
 
 ## Notes
 
