@@ -14,7 +14,7 @@ $LOG = Join-Path $LOGDIR "agent_main_startup.log"
 
 $Action = New-ScheduledTaskAction `
   -Execute "C:\Windows\System32\cmd.exe" `
-  -Argument "/c ""$PY"" -u -File ""$SCRIPT"" >> ""$LOG"" 2>&1"
+  -Argument "/c ""$PY"" -u ""$SCRIPT"" >> ""$LOG"" 2>&1"
 
 $Trigger = New-ScheduledTaskTrigger -AtStartup
 

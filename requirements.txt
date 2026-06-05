@@ -2,3 +2,4 @@ requests
 rpyc
 python-dotenv
 PyPDF2
+playwright
