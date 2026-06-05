@@ -14,6 +14,7 @@
   <a href="#requirements"><img src="https://img.shields.io/badge/Platform-Windows-0078d4?logo=windows&logoColor=white" alt="Windows" height="24"></a>
   <a href="#requirements"><img src="https://img.shields.io/badge/VMware-Workstation-607078" alt="VMware Workstation" height="24"></a>
   <a href="#requirements"><img src="https://img.shields.io/badge/Automation-Playwright-2ead33?logo=playwright&logoColor=white" alt="Playwright" height="24"></a>
+  <a href="#system-architecture"><img src="https://img.shields.io/badge/VM%20RPC-RPyC-2563eb" alt="VM RPC RPyC" height="24"></a>
   <a href="#requirements"><img src="https://img.shields.io/badge/LLM-OpenAI%20API-111827" alt="OpenAI API" height="24"></a>
   <a href="#end-to-end-replay-no-llm"><img src="https://img.shields.io/badge/Replay-action%20log%20based-6f42c1" alt="Replay action log based" height="24"></a>
   <a href="#license-and-citation"><img src="https://img.shields.io/badge/License-pending-lightgrey" alt="License pending" height="24"></a>
@@ -41,7 +42,9 @@ Together, these components connect **what the agent did**, **what the user inter
 - [System Architecture](#system-architecture)
 - [Key Features](#key-features)
 - [Execution Modes](#execution-modes)
+- [Full Trigger Mode Tool Testing](#full-trigger-mode-tool-testing)
 - [Cloud-Reflected Schema Tracking](#cloud-reflected-schema-tracking)
+- [Schema Tracking Example Telegram Web IndexedDB](#schema-tracking-example-telegram-web-indexeddb)
 - [Action Space and Execution Model](#action-space-and-execution-model)
 - [Multi-Layer Artifact Collection](#multi-layer-artifact-collection)
 - [Supported Applications and Scenarios](#supported-applications-and-scenarios)
@@ -52,8 +55,6 @@ Together, these components connect **what the agent did**, **what the user inter
 - [Requirements](#requirements)
 - [Quick Start](#quick-start)
 - [End-to-End Replay No LLM](#end-to-end-replay-no-llm)
-- [Full Trigger Mode Tool Testing](#full-trigger-mode-tool-testing)
-- [Schema Tracking Example Telegram Web IndexedDB](#schema-tracking-example-telegram-web-indexeddb)
 - [Sample Outputs](#sample-outputs)
 - [Research Artifact Notes](#research-artifact-notes)
 - [License and Citation](#license-and-citation)
@@ -105,16 +106,7 @@ flowchart LR
     class E,O,T,R output;
 ```
 
-The result is a dataset where the action log, user-visible interface state, locally materialized cloud artifacts, and schema changes can be interpreted together.
-
-PrZMA separates the **purpose of a run** from the **execution strategy**:
-
-| Run Purpose | Configuration Path | What It Produces |
-|---|---|---|
-| **Education** | A user-defined scenario config specifies personas, VM agents, shared tasks, and snapshot policy. | Realistic multi-user activity with action-aligned artifacts for teaching, exercises, and controlled demonstrations. |
-| **Tool Testing** | TMI reads a target tool manual and derives artifact requirements, action boundaries, and snapshot rules. | Tool-oriented datasets for checking whether forensic tools recover expected artifacts and for observing schema coverage or drift. |
-
-Execution strategies such as **Target Mode** and **All Mode** are described below; they determine whether PrZMA runs focused scenario/tool actions or broader UI-triggering coverage.
+The result is a dataset where action logs, user-visible interface state, locally materialized cloud artifacts, and schema changes can be interpreted together.
 
 ## Demo
 
@@ -131,7 +123,11 @@ During execution, the Snapshot Engine performs time-based and action-based logic
 - `chromium.cache.cache_data`
 - `webapp.discord.chromium.storage`
 
-[![PrZMA Education Demo](https://img.youtube.com/vi/Efwjz-u-Uwo/0.jpg)](https://www.youtube.com/watch?v=Efwjz-u-Uwo)
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=Efwjz-u-Uwo">
+    <img src="https://img.youtube.com/vi/Efwjz-u-Uwo/maxresdefault.jpg" alt="PrZMA Education Demo" width="100%">
+  </a>
+</p>
 
 ## System Architecture
 
@@ -200,7 +196,47 @@ In the implementation, All Mode behavior is exposed through the Full Trigger wor
 - `browser.full_trigger_click`: records action-level UI triggering events.
 - `capture_web_state`: stores interface and client-side schema context for later comparison.
 
-## Cloud-Reflected Schema Tracking
+## Full Trigger Mode Tool Testing
+
+Full Trigger is the implementation path used for All Mode style experiments.
+
+The goal is to induce schema expansion by triggering conditionally generated artifacts across a cloud web application. In this workflow, a logical snapshot is executed at each Full Trigger action.
+
+For each action-level snapshot, PrZMA:
+
+- Collects HTML source, DOM structure, and rendered screenshots.
+- Performs logical snapshots of browser storage, including IndexedDB, LevelDB, and Chromium Cache.
+- Parses selected artifacts with external parsers such as `ccl_chromium_reader`, when configured.
+- Stores structured results in `schema_tracking_<run_id>.db`.
+
+### Discord Snapshot Comparison
+
+Three Full Trigger executions were performed on Discord Web:
+
+- `discord_ft1`: baseline execution.
+- `discord_ft2`: additional standard interactions.
+- `discord_ft3`: thread creation and interaction.
+
+**Cache Diff: `discord_ft1` vs `discord_ft2`**
+
+![Cache Diff Result](images/cache_diff_demo.png)
+
+Entries labeled `ft2_only` represent cache artifacts generated exclusively by additional interactions.
+
+**Schema Change: `discord_ft1` vs `discord_ft3`**
+
+![Schema Drift Result](images/schema_drift_demo.png)
+
+Newly observed fields include:
+
+- `message_reference`
+- `reactions`
+- `referenced_message`
+- `sticker_items`
+
+The channel ID remained unchanged, indicating structural expansion within an existing entity rather than entity creation.
+
+## ☁️ Cloud-Reflected Schema Tracking
 
 Cloud services often materialize evidence locally through browser storage rather than through traditional standalone application files. PrZMA tracks these cloud-reflected artifacts by collecting browser-side state after selected actions and normalizing schema observations across snapshots.
 
@@ -212,6 +248,22 @@ Schema tracking uses action-aligned snapshots to preserve:
 - **How structures changed**: schema-tracking databases that compare object stores, fields, and artifact structures across snapshots or runs.
 
 This is particularly useful for Discord Web and Telegram Web, where server-side updates can change local artifact structures without local software installation events. PrZMA therefore supports both action-induced schema expansion and longitudinal schema drift observation.
+
+## Schema Tracking Example Telegram Web IndexedDB
+
+PrZMA applies the same Tracking DB infrastructure to cloud-synchronized web applications.
+
+The figure below shows the Tracking DB generated from a Telegram Web snapshot captured in May 2026.
+
+![Telegram Schema Demo](images/telegram_schema_demo.png)
+
+Even within a single snapshot, structural heterogeneity is observable across IndexedDB object stores. Because Telegram Web reflects cloud-synchronized data, structural changes may occur due to server-side updates, not only local interactions.
+
+This example demonstrates that PrZMA supports:
+
+- Action-induced schema expansion.
+- Time-based structural drift detection.
+- Validation of forensic tools against evolving web application schemas.
 
 ## Action Space and Execution Model
 
@@ -231,7 +283,7 @@ The LLM selects and parameterizes actions at runtime based on the scenario, pers
 
 PrZMA collects multi-layer forensic artifacts through action-triggered logical snapshots. Instead of relying only on full disk imaging, it captures browser, cloud-reflected, and system layers while preserving realistic interaction-driven traces.
 
-### Browser Artifacts Chromium-Based
+### 🌐 Browser Artifacts Chromium-Based
 
 | Layer | Artifact Category | Collected Items |
 |---|---|---|
@@ -242,14 +294,14 @@ PrZMA collects multi-layer forensic artifacts through action-triggered logical s
 | Browser | Execution Cache | Code Cache, JavaScript bytecode |
 | Browser | Network Metadata | Network state, TransportSecurity, Reporting/NEL |
 
-### Cloud-Reflected Web Application Artifacts
+### ☁️ Cloud-Reflected Web Application Artifacts
 
 | Layer | Application | Collected Artifacts |
 |---|---|---|
 | Cloud-Reflected | Discord Web | IndexedDB, Local Storage, Session Storage, Service Worker, CacheStorage, Code Cache |
 | Cloud-Reflected | Telegram Web | IndexedDB, Local Storage, Session Storage, Service Worker, CacheStorage, Code Cache |
 
-### System Artifacts Windows
+### 🖥️ System Artifacts Windows
 
 | Layer | Category | Collected Items |
 |---|---|---|
@@ -490,62 +542,6 @@ Replay outputs are written to:
 - `runs/run_<replay_run_id>/actions.jsonl`
 - `runs/run_<replay_run_id>/snapshots/...`
 
-## Full Trigger Mode Tool Testing
-
-Full Trigger is the implementation path used for All Mode style experiments.
-
-The goal is to induce schema expansion by triggering conditionally generated artifacts across a cloud web application. In this workflow, a logical snapshot is executed at each Full Trigger action.
-
-For each action-level snapshot, PrZMA:
-
-- Collects HTML source, DOM structure, and rendered screenshots.
-- Performs logical snapshots of browser storage, including IndexedDB, LevelDB, and Chromium Cache.
-- Parses selected artifacts with external parsers such as `ccl_chromium_reader`, when configured.
-- Stores structured results in `schema_tracking_<run_id>.db`.
-
-### Discord Snapshot Comparison
-
-Three Full Trigger executions were performed on Discord Web:
-
-- `discord_ft1`: baseline execution.
-- `discord_ft2`: additional standard interactions.
-- `discord_ft3`: thread creation and interaction.
-
-**Cache Diff: `discord_ft1` vs `discord_ft2`**
-
-![Cache Diff Result](images/cache_diff_demo.png)
-
-Entries labeled `ft2_only` represent cache artifacts generated exclusively by additional interactions.
-
-**Schema Change: `discord_ft1` vs `discord_ft3`**
-
-![Schema Drift Result](images/schema_drift_demo.png)
-
-Newly observed fields include:
-
-- `message_reference`
-- `reactions`
-- `referenced_message`
-- `sticker_items`
-
-The channel ID remained unchanged, indicating structural expansion within an existing entity rather than entity creation.
-
-## Schema Tracking Example Telegram Web IndexedDB
-
-PrZMA applies the same Tracking DB infrastructure to cloud-synchronized web applications.
-
-The figure below shows the Tracking DB generated from a Telegram Web snapshot captured in February 2026.
-
-![Telegram Schema Demo](images/telegram_schema_demo.png)
-
-Even within a single snapshot, structural heterogeneity is observable across IndexedDB object stores. Because Telegram Web reflects cloud-synchronized data, structural changes may occur due to server-side updates, not only local interactions.
-
-This example demonstrates that PrZMA supports:
-
-- Action-induced schema expansion.
-- Time-based structural drift detection.
-- Validation of forensic tools against evolving web application schemas.
-
 ## Sample Outputs
 
 Selected outputs are provided under [`End to End Samples/`](End%20to%20End%20Samples):
@@ -567,21 +563,6 @@ See [`End to End Samples/README.md`](End%20to%20End%20Samples/README.md) for det
 - Full Trigger launchers are convenience wrappers around generated Full Trigger configurations. If config-builder helper scripts are not included in a checkout, use the sample Full Trigger configurations under [`End to End Samples/All Execution Mode/`](End%20to%20End%20Samples/All%20Execution%20Mode) or prepare equivalent configs manually.
 - Telegram Web behavior can depend on persistent browser sessions and server-side updates, so schema changes may reflect remote service evolution as well as local user actions.
 - Logical snapshots are intended to preserve action-aligned forensic state; they are not a replacement for full disk images in all forensic workflows.
-
-## Typical Use Cases
-
-- **Forensic education**
-  - Generate clean, reproducible datasets for training and coursework.
-  - Avoid privacy and legal issues associated with real user data.
-
-- **Forensic tool testing**
-  - Validate whether a tool detects known interactions.
-  - Compare tool outputs against action-level ground truth.
-
-- **Research and benchmarking**
-  - Study artifact drift across browser or application versions.
-  - Evaluate forensic tool coverage and limitations.
-  - Preserve version-specific schema observations for later analysis.
 
 ## License and Citation
 
