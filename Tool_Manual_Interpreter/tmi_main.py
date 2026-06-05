@@ -507,7 +507,7 @@ def main() -> int:
     ap.add_argument("--actions", default="", help="Path to actions.json (or TMI_ACTIONS_JSON)")
     ap.add_argument("--catalog", default="", help="Path to artifact_catalog.json (or TMI_ARTIFACT_CATALOG_JSON)")
 
-    ap.add_argument("--template-config", default="", help="Optional template config. If empty, uses repo_root/przma_config.json")
+    ap.add_argument("--template-config", default="", help="Optional template config. If empty, uses repo_root/Config(templete).json")
     ap.add_argument("--out-dir", default="", help="Output directory (or TMI_OUT_DIR)")
     ap.add_argument("--run-id", default="", help="Run id (or PRZMA_RUN_ID). If empty, auto-generated.")
     ap.add_argument("--default-agent", default="A1", help="Default agent_id for snapshot collection plan")
@@ -603,7 +603,7 @@ def main() -> int:
             if isinstance(tool_plan.get("tool_plan"), dict):
                 tool_plan["tool_plan"]["target_application"] = args.full_trigger_target
 
-    # template config (default to repo_root/przma_config.json)
+    # template config (default to repo_root/Config(templete).json)
     template_cfg: Optional[Dict[str, Any]] = None
     if args.template_config:
         tp = Path(args.template_config)
@@ -611,7 +611,7 @@ def main() -> int:
             template_cfg = read_json(tp)
 
     if template_cfg is None:
-        default_template_path = repo_root / "przma_config.json"
+        default_template_path = repo_root / "Config(templete).json"
         if not default_template_path.exists():
             print(f"ERROR: default template not found: {default_template_path}", file=sys.stderr)
             return 2

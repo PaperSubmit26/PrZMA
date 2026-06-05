@@ -11,7 +11,7 @@ param(
   [string]$ToolManualPath = "",
 
   # Optional template (reuse education config infra)
-  [string]$TemplateConfig = ".\przma_config.json",
+  [string]$TemplateConfig = ".\Config(templete).json",
 
   # Paths
   [string]$ActionsJson = ".\shared\actions.json",
