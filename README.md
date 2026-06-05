@@ -1,19 +1,23 @@
-# PrZMA
-
-**Prompt-Guided Zero-Touch Multi-Interaction Agent for Generating Forensic Datasets in Multi-Platform Environments**
+<h1 align="center">PrZMA</h1>
 
 <p align="center">
-  <img src="images/PrZMA_Logo.png" alt="PrZMA visual overview" width="820">
+  <strong>Prompt-Guided Zero-Touch Multi-Interaction Agent for Generating Forensic Datasets in Multi-Platform Environments</strong>
 </p>
 
-[![DFRWS APAC 2026](https://img.shields.io/badge/DFRWS%20APAC-2026-0b7285)](#)
-[![Python](https://img.shields.io/badge/Python-3.10%2B-3776ab?logo=python&logoColor=white)](#requirements)
-[![Platform](https://img.shields.io/badge/Platform-Windows-0078d4?logo=windows&logoColor=white)](#requirements)
-[![VMware](https://img.shields.io/badge/VMware-Workstation-607078)](#requirements)
-[![Playwright](https://img.shields.io/badge/Automation-Playwright-2ead33?logo=playwright&logoColor=white)](#requirements)
-[![OpenAI API](https://img.shields.io/badge/LLM-OpenAI%20API-111827)](#requirements)
-[![Replay](https://img.shields.io/badge/Replay-action%20log%20based-6f42c1)](#end-to-end-replay-no-llm)
-[![License](https://img.shields.io/badge/License-pending-lightgrey)](#license-and-citation)
+<p align="center">
+  <img src="images/PrZMA_Logo.png" alt="PrZMA visual overview" width="860">
+</p>
+
+<p align="center">
+  <a href="#"><img src="https://img.shields.io/badge/DFRWS%20APAC-2026-0b7285" alt="DFRWS APAC 2026" height="24"></a>
+  <a href="#requirements"><img src="https://img.shields.io/badge/Python-3.10%2B-3776ab?logo=python&logoColor=white" alt="Python 3.10+" height="24"></a>
+  <a href="#requirements"><img src="https://img.shields.io/badge/Platform-Windows-0078d4?logo=windows&logoColor=white" alt="Windows" height="24"></a>
+  <a href="#requirements"><img src="https://img.shields.io/badge/VMware-Workstation-607078" alt="VMware Workstation" height="24"></a>
+  <a href="#requirements"><img src="https://img.shields.io/badge/Automation-Playwright-2ead33?logo=playwright&logoColor=white" alt="Playwright" height="24"></a>
+  <a href="#requirements"><img src="https://img.shields.io/badge/LLM-OpenAI%20API-111827" alt="OpenAI API" height="24"></a>
+  <a href="#end-to-end-replay-no-llm"><img src="https://img.shields.io/badge/Replay-action%20log%20based-6f42c1" alt="Replay action log based" height="24"></a>
+  <a href="#license-and-citation"><img src="https://img.shields.io/badge/License-pending-lightgrey" alt="License pending" height="24"></a>
+</p>
 
 This repository is the official implementation of **PrZMA**, submitted to **DFRWS APAC 2026**.
 
