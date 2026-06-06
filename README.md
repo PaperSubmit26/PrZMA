@@ -274,7 +274,7 @@ Representative actions include:
 | Category | Examples |
 |---|---|
 | Browser | `browser.launch`, `browser.goto`, `browser.smart_click`, `browser.smart_type`, `browser.scroll`, `browser.screenshot` |
-| Discord Web | `discord.login`, `discord.goto_channel`, `discord.send_message`, `discord.reply_message`, `discord.react_message`, `discord.upload_file`, `discord.download_file` |
+| Discord Web | `discord.login`, `discord.goto_channel`, `discord.get_latest_messages`, `discord.send_message`, `discord.reply_message`, `discord.react_message`, `discord.delete_message`, `discord.upload_file`, `discord.download_file` |
 | Telegram Web | `telegram.open`, `telegram.select_chat`, `telegram.get_latest_messages`, `telegram.send_message`, `telegram.reply_message`, `telegram.react_message`, `telegram.delete_message`, `telegram.upload_file`, `telegram.download_file` |
 
 The LLM selects and parameterizes actions at runtime based on the scenario, persona, current state, and artifact-generation goals. For downloads, PrZMA first reads visible messages and attachment candidates, then the planner can choose a contextually relevant candidate for `discord.download_file` or `telegram.download_file`. Web-service actions are implemented as bounded browser UI automation, so selector behavior may depend on the current Discord Web or Telegram Web interface.
