@@ -283,6 +283,7 @@
     "llm_guidance": [
         "Use this to monitor the conversation and decide the next action in real time.",
         "Call before sending a reply, especially for A2.",
+        "For downloads, inspect returned attachments and pass the selected attachment_id to discord.download_file.",
         "Do not assume the other agent has already spoken—verify by reading messages."
     ],
     "params_schema": {
@@ -344,6 +345,32 @@
       "side_effects": ["writes_cloud_message", "writes_local_artifacts"],
       "layers_touched": ["application.discord", "application.browser", "cloud_reflected"],
       "artifacts_hint": ["Attachment-related cache/IndexedDB updates", "Network traces"]
+    },
+    {
+      "name": "discord.download_file",
+      "namespace": "discord",
+      "summary": "Download an attachment or downloadable file from the currently opened Discord channel.",
+      "llm_guidance": [
+        "Use this after a visible attachment exists in the channel.",
+        "Target 'last' downloads the latest visible attachment or downloadable link.",
+        "Do not download untrusted external files outside the controlled scenario."
+      ],
+      "params_schema": {
+        "type": "object",
+        "properties": {
+          "target": { "type": "string", "enum": ["last"], "default": "last" },
+          "attachment_id": { "type": "string", "description": "Runtime attachment candidate id returned by discord.get_latest_messages." },
+          "message_index": { "type": "integer", "description": "Visible message index returned by discord.get_latest_messages." },
+          "attachment_index": { "type": "integer", "description": "Attachment index within the selected visible message." },
+          "download_dir": { "type": "string" },
+          "timeout_ms": { "type": "integer" }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "side_effects": ["downloads_file", "writes_local_artifacts"],
+      "layers_touched": ["application.discord", "application.browser", "system.files", "cloud_reflected"],
+      "artifacts_hint": ["Browser download history", "Downloaded file on VM", "Attachment-related cache entries"]
     },
     {
       "name": "discord.delete_message",
@@ -453,6 +480,128 @@
       },
       "side_effects": ["creates_cloud_message", "writes_local_artifacts"],
       "layers_touched": ["application.telegram", "cloud_reflected", "application.browser"]
+    },
+    {
+      "name": "telegram.get_latest_messages",
+      "namespace": "telegram",
+      "summary": "Fetch recent visible messages from the active Telegram Web chat UI.",
+      "llm_guidance": [
+        "Use this to inspect the current chat before replying, reacting, deleting, or downloading.",
+        "This reads visible UI state only and does not create artifacts by itself.",
+        "For downloads, inspect returned attachments and pass the selected attachment_id to telegram.download_file."
+      ],
+      "params_schema": {
+        "type": "object",
+        "properties": {
+          "limit": { "type": "integer", "minimum": 1, "maximum": 50 },
+          "chat": { "type": "string" },
+          "variant": { "type": "string" },
+          "timeout_ms": { "type": "integer" }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "side_effects": ["reads_dom_state"],
+      "layers_touched": ["application.telegram", "application.browser"],
+      "artifacts_hint": ["none (runtime UI read)"]
+    },
+    {
+      "name": "telegram.reply_message",
+      "namespace": "telegram",
+      "summary": "Reply to a visible Telegram Web message in the active chat.",
+      "llm_guidance": [
+        "Use target 'last' to reply to the latest visible message.",
+        "Keep reply text short and scenario-relevant."
+      ],
+      "params_schema": {
+        "type": "object",
+        "properties": {
+          "text": { "type": "string", "minLength": 1, "maxLength": 4096 },
+          "target": { "type": "string", "enum": ["last"], "default": "last" },
+          "chat": { "type": "string" },
+          "variant": { "type": "string" },
+          "timeout_ms": { "type": "integer" }
+        },
+        "required": ["text"],
+        "additionalProperties": false
+      },
+      "side_effects": ["creates_cloud_message", "writes_local_artifacts"],
+      "layers_touched": ["application.telegram", "cloud_reflected", "application.browser"],
+      "artifacts_hint": ["Reply metadata in local web storage/cache", "Message-related network traces"]
+    },
+    {
+      "name": "telegram.react_message",
+      "namespace": "telegram",
+      "summary": "Add an emoji reaction to a visible Telegram Web message.",
+      "llm_guidance": [
+        "Use a Unicode emoji such as thumbs-up or heart.",
+        "Target 'last' reacts to the latest visible message."
+      ],
+      "params_schema": {
+        "type": "object",
+        "properties": {
+          "emoji": { "type": "string", "minLength": 1 },
+          "target": { "type": "string", "enum": ["last"], "default": "last" },
+          "chat": { "type": "string" },
+          "variant": { "type": "string" },
+          "timeout_ms": { "type": "integer" }
+        },
+        "required": ["emoji"],
+        "additionalProperties": false
+      },
+      "side_effects": ["updates_cloud_message", "writes_local_artifacts"],
+      "layers_touched": ["application.telegram", "cloud_reflected", "application.browser"],
+      "artifacts_hint": ["Reaction-related storage/cache changes", "Message update network traces"]
+    },
+    {
+      "name": "telegram.delete_message",
+      "namespace": "telegram",
+      "summary": "Delete a visible Telegram Web message in the active chat.",
+      "llm_guidance": [
+        "Use target 'last' to delete the latest visible message when the scenario requires deletion.",
+        "Prefer deleting messages created by the current agent."
+      ],
+      "params_schema": {
+        "type": "object",
+        "properties": {
+          "target": { "type": "string", "enum": ["last"], "default": "last" },
+          "chat": { "type": "string" },
+          "variant": { "type": "string" },
+          "timeout_ms": { "type": "integer" }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "side_effects": ["removes_cloud_message", "writes_local_artifacts"],
+      "layers_touched": ["application.telegram", "cloud_reflected", "application.browser"],
+      "artifacts_hint": ["Deletion/update traces in web storage and cache"]
+    },
+    {
+      "name": "telegram.download_file",
+      "namespace": "telegram",
+      "summary": "Download a file or media attachment from the active Telegram Web chat.",
+      "llm_guidance": [
+        "Use this after a visible downloadable file or media attachment exists in the chat.",
+        "Target 'last' downloads the latest visible downloadable item."
+      ],
+      "params_schema": {
+        "type": "object",
+        "properties": {
+          "target": { "type": "string", "enum": ["last"], "default": "last" },
+          "attachment_id": { "type": "string", "description": "Runtime attachment candidate id returned by telegram.get_latest_messages." },
+          "message_index": { "type": "integer", "description": "Visible message index returned by telegram.get_latest_messages." },
+          "attachment_index": { "type": "integer", "description": "Attachment index within the selected visible message." },
+          "download_dir": { "type": "string" },
+          "chat": { "type": "string" },
+          "variant": { "type": "string" },
+          "timeout_ms": { "type": "integer" }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "side_effects": ["downloads_file", "writes_local_artifacts"],
+      "layers_touched": ["application.telegram", "application.browser", "system.files", "cloud_reflected"],
+      "artifacts_hint": ["Browser download history", "Downloaded file on VM", "Attachment/cache traces"]
     },
     {
       "name": "telegram.upload_file",
