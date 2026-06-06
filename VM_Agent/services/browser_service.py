@@ -81,6 +81,7 @@ class BrowserService:
             headless=headless,
             locale=locale,
             timezone_id=tz,
+            accept_downloads=True,
             args=extra_args,
         )
         page = context.new_page()

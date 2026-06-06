@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import os
+from pathlib import Path
 from typing import Any, Dict, List, Optional
 
 from playwright.sync_api import TimeoutError as PWTimeoutError
@@ -379,7 +380,7 @@ class DiscordService:
         params:
           - limit (optional, default 10)
         returns:
-          { "messages": [ { "author": str|null, "text": str, "ts": str|null } ... ] }
+          { "messages": [ { "author": str|null, "text": str, "ts": str|null, "attachments": list } ... ] }
         """
         limit = int(params.get("limit", 10))
         timeout_ms = int(params.get("timeout_ms", 30000))
@@ -392,16 +393,20 @@ class DiscordService:
         except Exception:
             pass
 
-        # Use DOM evaluation to be resilient to class name changes
         js = """
         (limit) => {
           const out = [];
-          // Primary container used in Discord Web
           const root = document.querySelector("ol[data-list-id='chat-messages']") || document;
-          // Try to collect message items (li) in the chat list
           const items = Array.from(root.querySelectorAll("li")).slice(-Math.max(1, limit) * 3); // oversample a bit
+          const downloadableHref = (href) => {
+            if (!href) return false;
+            const h = href.toLowerCase();
+            return h.includes("cdn.discordapp.com")
+                || h.includes("media.discordapp.net")
+                || h.includes("/attachments/")
+                || h.includes("download");
+          };
           for (const li of items) {
-            // author (best-effort)
             const authorEl =
               li.querySelector("h3 span[role='button']") ||
               li.querySelector("span[class*='username']") ||
@@ -416,24 +421,58 @@ class DiscordService:
               li.querySelector("div[class*='messageContent']");
 
             const text = msgEl ? (msgEl.textContent || "").trim() : "";
-            if (!text) continue;
-
-            // timestamp (best-effort)
             const timeEl = li.querySelector("time");
             const ts = timeEl ? (timeEl.getAttribute("datetime") || null) : null;
 
-            out.push({ author, text, ts });
+            const attachments = [];
+            const controls = Array.from(li.querySelectorAll("a[href], button, [role='button']"));
+            for (const el of controls) {
+              const href = el.getAttribute("href") || "";
+              const label = (el.getAttribute("aria-label") || el.getAttribute("title") || el.textContent || "").trim();
+              if (!downloadableHref(href) && !label.toLowerCase().includes("download")) continue;
+              const rect = el.getBoundingClientRect();
+              const filename = (() => {
+                if (label && !label.toLowerCase().includes("download")) return label;
+                try {
+                  const clean = href.split("?")[0];
+                  const last = clean.split("/").filter(Boolean).pop();
+                  return last ? decodeURIComponent(last) : "";
+                } catch (_) {
+                  return "";
+                }
+              })();
+              attachments.push({
+                attachment_index: attachments.length,
+                filename,
+                label,
+                href,
+                downloadable: true,
+                x: rect.left + rect.width / 2,
+                y: rect.top + rect.height / 2
+              });
+            }
+
+            if (!text && attachments.length === 0) continue;
+            out.push({ author, text, ts, attachments });
           }
 
-          // keep last N
-          return out.slice(-limit);
+          return out.slice(-limit).map((msg, message_index) => {
+            msg.message_index = message_index;
+            msg.attachments = (msg.attachments || []).map((att, attachment_index) => ({
+              ...att,
+              attachment_index,
+              attachment_id: `discord_att_${message_index}_${attachment_index}`
+            }));
+            return msg;
+          });
         }
         """
         messages = page.evaluate(js, limit)
         if not isinstance(messages, list):
             messages = []
 
-        return {"current_url": page.url, "count": len(messages), "messages": messages}
+        attachment_count = sum(len(m.get("attachments") or []) for m in messages if isinstance(m, dict))
+        return {"current_url": page.url, "count": len(messages), "attachment_count": attachment_count, "messages": messages}
 
     def action_upload_file(self, agent_id: str, params: Dict[str, Any]) -> Dict[str, Any]:
         """
@@ -472,6 +511,91 @@ class DiscordService:
                 pass
 
         return {"uploaded": True, "file_path": file_path, "current_url": page.url}
+
+    def action_download_file(self, agent_id: str, params: Dict[str, Any]) -> Dict[str, Any]:
+        """
+        Download the latest visible Discord attachment or downloadable link.
+        params:
+          - target: "last" (currently supported)
+          - download_dir: optional VM directory
+        """
+        timeout_ms = int(params.get("timeout_ms", 30000))
+        self.ensure_open(agent_id, timeout_ms)
+        page = self._page(agent_id)
+
+        download_dir = Path(params.get("download_dir") or os.path.join("C:\\", "PrZMA", "downloads", agent_id, "discord"))
+        download_dir.mkdir(parents=True, exist_ok=True)
+
+        latest = self.action_get_latest_messages(agent_id, {"limit": 50, "timeout_ms": timeout_ms})
+        candidates: List[Dict[str, Any]] = []
+        for msg in latest.get("messages") or []:
+            if not isinstance(msg, dict):
+                continue
+            for att in msg.get("attachments") or []:
+                if isinstance(att, dict):
+                    merged = dict(att)
+                    merged["message_index"] = msg.get("message_index")
+                    merged["message_text"] = msg.get("text")
+                    merged["author"] = msg.get("author")
+                    candidates.append(merged)
+
+        attachment_id = params.get("attachment_id")
+        message_index = params.get("message_index")
+        attachment_index = params.get("attachment_index")
+        candidate = None
+        for item in candidates:
+            if attachment_id and item.get("attachment_id") == attachment_id:
+                candidate = item
+                break
+            if message_index is not None and attachment_index is not None:
+                if int(item.get("message_index", -1)) == int(message_index) and int(item.get("attachment_index", -1)) == int(attachment_index):
+                    candidate = item
+                    break
+        if candidate is None and candidates:
+            candidate = candidates[-1]
+        if not candidate:
+            return {"downloaded": False, "error": "No visible Discord attachment or download control found.", "current_url": page.url}
+
+        try:
+            with page.expect_download(timeout=timeout_ms) as download_info:
+                page.mouse.click(float(candidate["x"]), float(candidate["y"]))
+            download = download_info.value
+            suggested = download.suggested_filename or "discord_download"
+            save_path = download_dir / suggested
+            download.save_as(str(save_path))
+            return {
+                "downloaded": True,
+                "file_path": str(save_path),
+                "suggested_filename": suggested,
+                "source_href": candidate.get("href"),
+                "current_url": page.url,
+            }
+        except Exception as first_error:
+            href = candidate.get("href")
+            if href:
+                try:
+                    response = page.context.request.get(href, timeout=timeout_ms)
+                    if not response.ok:
+                        raise RuntimeError(f"HTTP {response.status}: {response.status_text}")
+                    filename = Path(href.split("?", 1)[0]).name or "discord_download"
+                    save_path = download_dir / filename
+                    save_path.write_bytes(response.body())
+                    return {
+                        "downloaded": True,
+                        "file_path": str(save_path),
+                        "suggested_filename": filename,
+                        "source_href": href,
+                        "fallback": "context_request",
+                        "current_url": page.url,
+                    }
+                except Exception as second_error:
+                    return {
+                        "downloaded": False,
+                        "error": f"Download click failed: {first_error}; href fallback failed: {second_error}",
+                        "source_href": href,
+                        "current_url": page.url,
+                    }
+            return {"downloaded": False, "error": str(first_error), "current_url": page.url}
 
     def action_delete_message(self, agent_id: str, params: Dict[str, Any]) -> Dict[str, Any]:
         """
@@ -813,6 +937,8 @@ class DiscordService:
             return self.action_get_latest_messages(agent_id, params)
         if verb == "upload_file":
             return self.action_upload_file(agent_id, params)
+        if verb == "download_file":
+            return self.action_download_file(agent_id, params)
         if verb == "delete_message":
             return self.action_delete_message(agent_id, params)
         if verb == "reply_message":
