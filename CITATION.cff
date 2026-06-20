@@ -1,8 +1,7 @@
 cff-version: 1.2.0
-message: "If you use PrZMA, please cite the associated DFRWS APAC 2026 paper and this software artifact."
+message: "This is an anonymized software artifact for peer review. If you use PrZMA, please cite this software artifact once citation metadata becomes available."
 title: "PrZMA: A Prompt-Guided Zero-Touch Multi-Interaction Agent for Generating Forensic Datasets in Multi-Platform Environments"
 type: software
 authors:
   - name: "PrZMA contributors"
-date-released: 2026-06-05
 abstract: "PrZMA is a prompt-guided, zero-touch framework for generating action-grounded digital forensic datasets in multi-user, multi-platform virtualized environments."
